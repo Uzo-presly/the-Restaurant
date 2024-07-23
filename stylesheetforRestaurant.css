@@ -5,10 +5,15 @@
   font-family: "Montserrat";
   box-sizing: border-box;
 }
-body{padding: 10px 0px;} 
+body {
+  padding: 10px 0px;
+}
 p,
 h2 {
   max-width: 1000px;
+}
+.page {
+  width: fit-content;
 }
 .landing > div {
   width: 550px;
@@ -19,17 +24,30 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.landing > div:nth-child(1){background-color: #cff4fc;padding: 10px 10px 0px 30px;}
-#lndnBarge{position: relative;top: 20px; left: -50px;}
-#johnRecipeView{position: relative;top: 150px;width: 500px; }
-#jhnPspot{margin: 0px 150px 0px 20px;}
-.page {
-  width: fit-content;
+.landing > div:nth-child(1) {
+  background-color: #cff4fc;
+  padding: 10px 10px 0px 30px;
 }
+#lndnBarge {
+  position: relative;
+  top: 20px;
+  left: -50px;
+}
+#johnRecipeView {
+  position: relative;
+  top: 150px;
+  width: 500px;
+}
+#jhnPspot {
+  margin: 0px 150px 0px 20px;
+}
+
 .simple:nth-child(1) {
   background-image: url();
 }
-.simpleCntr{text-align: center;}
+.simpleCntr {
+  text-align: center;
+}
 .subscription {
   background-image: url(./subcription\ backdrop.png);
   max-width: 1300px;
@@ -38,7 +56,15 @@ h2 {
 #green {
   background-image: url(./salad\ Dish\ backdrop.png);
 }
-#chefFoto{float: right;}
+#chefStatement {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  justify-content: space-around;
+}
+#chefFoto {
+  float: right;
+}
 .checkOut {
   max-width: 300px;
 }
