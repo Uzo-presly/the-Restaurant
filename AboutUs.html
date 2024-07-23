@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="./AboutUs.css">
+    <link rel="icon" type="image/x-icon" href="/badge icon.png">
+</head>
+<!-- for pictorial referals use Iframe <h2>Iframe - Target for a Link</h2>
+<iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p> -->
+
+<body>
+    <!--  this section has a hamburger-list for the small phones
+      use list-tag to create the hamburger-->
+    <section class="HambugerList">
+        <ul>
+            <li class="dropdown">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AgLMAfLEAea94rMy20+OTv9cAd67Y5e8AdK0AeK8Ae7AAfrLe7POKutSaw9ry+Pukyd5aoMVPmsLm8vcAhLZkpMd9stA6kr3M4ey10uPY6fG+1+bD3Oltqcri8PbGg5XrAAABtElEQVR4nO3dSXKDQBBEUQbJbaAlgQYPQjb3v6WDRtZWG2Mik/9O0D9gVxVRWQYAAAAAwGrs9htHh/Y3sKuawlFZ91NgX+WmYpwKj3Hpl8ym7FKh7SfM8+I0Bg5h6XfMZ/pNX40L84pCeRTqo1Afhfoo1EehPgr1UaiPQn0U6qNQH4X6VlLYOxeGsfBsPJnJL2n2VPhO1+JbKnxvln7IbMItFbal60dsPu5z/P4SSkN1dXqsKmSfWz/Xbf98CwUAAAAAAAAAAAAAAODvtdcXQ4fbI/CrrpfefZlFuJynQN/VvTgt7mXfxdIvmU24psJ66XfMJx7HwMH2Jx2NhdZb0MG+cCWb7BRKo1Afhfoo1EehPgr1UaiPQn0U6qNQH4X6KNQX1jG38J89rWB+6D8D9p/jr2AXAwAAAAAAAAAAAAAA4D+53yixvzPjfyvI/96T/c0u38W9/H53zf92nvUWtP+eN4X6KNRHoT4K9VGoj0J9FOqjUB+F+ijUR6E+CvWlwsG4MMY0ezKezBSnVHj0na6V3TTktv2I9580y7qqKRyV9WNXYbffODq0z7dQAAAAAABw8QPT1JCAPa8cWQAAAABJRU5ErkJggg=="
+                    alt="" width="100vw" height="25vw">
+                <div class="dropdown-content">
+                    <a href="./index homepage.html">Home</a>
+                    <a href="./recipe.html">Recipe</a>
+                    <a href="./BlogArticle.html">Blog Articles</a>
+                    <a href=""></a>
+                </div>
+            </li>
+        </ul>
+        <!-- this section has the nav that shall display inlarge screens.
+  It is a container of three divs-one for foodieland image;
+      for refs to other pages and for social links
+      they shall flex in large screens but hidden in -->
+    </section>
+    <section class="navDivs">
+        <nav>
+            <div id="foodielandText"><img src="./Foodieland..png" alt="" width="110px" height="20px"></div>
+            <div id="menu">
+                <div><a href="./recipe details.html">Recipes</a></div>
+                <div><a href="./blog page.html">Blog</a></div>
+                <div><a href="./contact page.html">Contacts</a></div>
+            </div>
+            <div id="topsocialLinks">
+                <div><a href=""></a><!-- facebook link --></div>
+                <div><a href=""></a><!-- twitter logo --></div>
+                <div><a href=""></a><!-- instagram logo --></div>
+            </div>
+        </nav>
+    </section>
+    <!-- this section contains an h1 tag, p tag and a div that contains two inputs -->
+    <section class="blogTitile">
+        <h1>Blog and Article</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati repellat ut commodi, porro non corrupti
+            explicabo eaque.</p>
+        <div><input type="search" name="search" id="" placeholder="search article, news or recipe">
+            <input type="submit" value="Search">
+        </div>
+    </section>
+    <!-- this next section contains two sections each with a number of divs -->
+    <section>
+        <!-- this section has six divs -->
+        <section>
+            <!-- for labels do thus  <label for="email">Enter your email:</label> -->
+            <!-- each div has two divs- 
+             the second has two divs in which the first has an h and p tag while the other has two images -->
+            <div class="recipeSamples">
+                <div style="background-image: url(./ramen\ soup.png); width: 290px; height: 200px;"></div>
+                <div>
+                    <h3>Crochet Projects for Noodles Lovers</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                        necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                </div>
+            </div>
+            <div class="recipeSamples">
+                <div style="background-image: url(./mixed\ Tropical.png); width: 290px; height: 200px;"></div>
+                <div>
+                    <h3>10 Vegetarian Recipes To Eat This Month</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                        necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                </div>
+            </div>
+            <div class="recipeSamples">
+                <div style="background-image: url(./professinalMaleChef.png); width: 290px; height: 200px;"></div>
+                <div>
+                    <h3>Full Guide to Becoming a Professional Chef</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                        necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                </div>
+                <div class="recipeSamples">
+                    <div style="background-image: url(./vegetatedLasagna.png); width: 290px; height: 200px;"></div>
+                    <div>
+                        <h3>Plaintain and Pinto Stew With Aji Verde</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                            necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                    </div>
+                </div>
+                <div class="recipeSamples">
+                    <div style="background-image: url(./plantainStew.png); width: 290px; height: 200px;"></div>
+                    <div>
+                        <h3>Plaintain and Pinto Stew With Aji Verde</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                            necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                    </div>
+                </div>
+                <div class="recipeSamples">
+                    <div style="background-image: url(./WeReHiringNotice.png); width: 290px; height: 200px;"></div>
+                    <div>
+                        <h3>We're Hiring a Communications Assistant!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                            necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                    </div>
+                </div>
+        </section>
+        <!-- this section has four divs -->
+        <section>
+            <h2>Tasty Recipes</h2>
+            <!-- each div has two divs.The second divs within them contain
+             an h3 tag and a p tag -->
+            <div class="tastyRecipeSamples">
+                <div style="background-image: url(./meat\ balls.png); width: 290px; height: 200px;"></div>
+                <div>
+                    <h3>Chicken Meatballs with Cream cheese</h3>
+                    <p>By Andreas Paula</p>
+                </div>
+            </div>
+            <div class="tastyRecipeSamples">
+                <div style="background-image: url(./bacon\ pasta.png); width: 290px; height: 200px;"></div>
+                <div>
+                    <h3>Traditional Bolognaise Ragu</h3>
+                    <p>By Andreas Paula</p>
+                </div>
+            </div>
+            <div class="tastyRecipeSamples">
+                <div style="background-image: url(./Chinese\ dumplings.png); width: 290px; height: 200px;"></div>
+                <div>
+                    <h3>Pork and Chive Chinese Dumplings</h3>
+                    <p>By Andreas Paula</p>
+                </div>
+            </div>
+            <div class="tastyRecipeSamples">
+                <div id="healthyFoodImage" style="background-image: url(./Healthy\ food\ reminder.png); width: 400px; height: 450px; background-repeat: no-repeat;" ></div>
+            </div>
+        </section>
+    </section>
+    <!-- this section has a div that has SEVEN h3 tags that shall display in lineBlock and classed as buttons
+     Setting the width of a block-level element will prevent it from stretching out to the edges of its container. Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins:
+
+{Importance of max-width for small screens. This <div> element has a width of 500px, and margin set to auto.
+Note: The problem with the <div> above occurs when the browser window is smaller than the width of the element. The browser then adds a horizontal scrollbar to the page.
+Using max-width instead, in this situation, will improve the browser's handling of small windows. This is important when making a site usable on small devices:
+This <div> element has a max-width of 500px, and margin set to auto.} -->
+    <section>
+        <h3 class="NumbButton">1</h3>
+        <h3 class="NumbButton">2</h3>
+        <h3 class="NumbButton">3</h3>
+        <h3 class="NumbButton">4</h3>
+        <h3 class="NumbButton">5</h3>
+        <h3 class="NumbButton">...</h3>
+        <h3 class="NumbButton">)</h3>
+    </section>
+    <section>
+        <div class="deliciousBox">
+            <div>
+                <h2>Deliciousness to your inbox</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis illum in temporibus quos
+                    eius
+                    laudantium labore voluptates voluptatem culpa ullam.</p>
+            </div>
+            <div><input type="email" name="e-mail" id="e-mail" placeholder="Your email address">
+                <input type="submit" value="Subscribe">
+            </div>
+        </div>
+    </section>
+    <!-- this footer section shall have two divs; in one shall be two divs, while the other has four divs
+     below them shall be two divs; the second of which has three divs for icons
+     However pls note that the fooetr shall not display in flex. 
+     Infact what we are doing is strictly for screens above 450px-->
+    <section>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <h4>Recipe</h4>
+            <h4>Blog</h4>
+            <h4>Contact</h4>
+            <h4>About us</h4>
+        </div>
+        <div>C 2020Flowbase Powered by Webflow</div>
+        <div class="theThree icons">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+</body>
+
+</html>

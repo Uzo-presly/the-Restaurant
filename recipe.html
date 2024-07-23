@@ -9,14 +9,17 @@
 </head>
 
 <body>
-    <section class="header page">
+    <!-- the nav is a container of three divs-one for foodieland image;
+      for refs to other pages and for social links
+      they shall flex in large screens but hidden in hamburgers in small phones
+      use SELECT-tag to create the hamburger-->
+    <section class="navDivs">
         <nav>
-            <div><a href="">Foodie</a></div>
+            <div><img src="./Foodieland..png" alt=""></div>
             <div id="menu">
-                <a href="./recipe details.html">Recipes</a>
-                <a href="./blog page.html">Blog</a>
-                <a href="./contact page.html">Contacts</a>
-            </div>
+                <div><a href="./recipe details.html">Recipes</a></div>
+                <div><a href="./blog page.html">Blog</a></div>
+                <div><a href="./contact page.html">Contacts</a></div>
             </div>
             <div id="topsocialLinks">
                 <div><a href=""></a><!-- facebook link --></div>
@@ -24,32 +27,46 @@
                 <div><a href=""></a><!-- instagram logo --></div>
             </div>
         </nav>
+        <!-- this section has the heading text and stacked beneath it is a column of small images
+         Images of mr John, prep time, cook time and cutleries. 
+         we shall put them in containing divs and in the linking CSS file,
+          we shall define the sizes of their divs and ensure to restrain the images within the divs. 
+          they shall flex in largere screens-->
     </section>
-    <h1>Healthy Japanese Fried Rice</h1>
-
-    <section class="johnPrint">
+    <section class="heading">
+        <h1>Healthy Japanese Fried Rice</h1>
         <div id="johnAndTime">
-            <img src="./john smith passport.png" alt="" width="160px" height="50px">
-            <img src="./prepTime.png" alt="" width="160px" height="50px">
-            <img src="./cookTime.png" alt="" width="160px" height="50px">
-            <img src="./chicken table knive.png" alt="" width="160px" height="50px">
+            <div><img src="./john smith passport.png" alt="" width="160px" height="50px"></div>
+            <div><img src="./prepTime.png" alt="" width="160px" height="50px"></div>
+            <div><img src="./cookTime.png" alt="" width="160px" height="50px"></div>
+            <div><img src="./chicken table knive.png" alt="" width="160px" height="50px"></div>
         </div>
         <div id="printShare">
-            <img src="./Print.png" alt="" width="80px" height="80px">
-            <img src="./Share.png" alt="" width="80px" height="80px">
+            <div><img src="./Print.png" alt="" width="80px" height="80px"></div>
+            <div><img src="./Share.png" alt="" width="80px" height="80px"></div>
         </div>
     </section>
+    <!-- this section is the landing page with divs ech with background images.
+     the first div shall have two for-button-images upon it. the images shall overlapp
+     to give the play button effect -->
     <section class="secondLanding">
-        <div></div>
+        <div>
+            <div class="whiteRoundBackDrop"><img src="./playButtonBase.png" alt="" width="120px" height="120px">
+            </div>
+            <div class="playButtonTriangle"><img src="./play button.png" alt="" width="32px" height="32px"></div>
+        </div>
         <div></div>
     </section>
+    <!-- this paragraph shall wrap in phones and spread in large screens -->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magni omnis expedita, totam quibusdam est
         reiciendis porro, aut laudantium, quo maxime cum recusandae aliquam! Pariatur earum amet minus doloremque
-        blanditiis natus incidunt, neque nulla, voluptate iure quibusdam. Rerum ad beatae, repellat aliquid magni fugiat
+        blanditiis natus incidunt, neque nulla, voluptate iure quibusdam. Rerum ad beatae, repellat aliquid magni
+        fugiat
         quod reiciendis doloremque nesciunt reprehenderit eligendi esse quasi temporibus ullam laudantium optio
         consequatur quas quo labore?</p>
-    <section class="inputOtherRecipe">
-        <div class="inputTextDivs">
+    <!-- this section contains two sections that shall flex on large screens but stack in phone screens -->
+    <section class="IngredientsOtherRecipe">
+        <section class="inputTextRecipe">
             <h2>Ingredients</h2>
             <h4>For main dish</h4>
             <form action="" method="post">
@@ -66,10 +83,19 @@
                 <div><input type="radio" name="inpButton" id=""><span> </span><input type="text" name="LoremText" id=""
                         placeholder=" Lorem ipsum dolor sit amet.reiciendis doloremque nesciunt reprehenderit "
                         class="inpText"></div>
-
+                <h4>For the sauce</h4>
+                <div><input type="radio" name="inpButton" id=""><span> </span><input type="text" name="LoremText" id=""
+                        placeholder=" Lorem ipsum dolor sit amet.reiciendis doloremque nesciunt reprehenderit "
+                        class="inpText"></div>
+                <div><input type="radio" name="inpButton" id=""><span> </span><input type="text" name="LoremText" id=""
+                        placeholder=" Lorem ipsum dolor sit amet." class="inpText"></div>
+                <div><input type="radio" name="inpButton" id=""><span> </span><input type="text" name="LoremText" id=""
+                        placeholder=" Lorem ipsum dolor sit amet.reiciendis doloremque nesciunt reprehenderit "
+                        class="inpText"></div>
             </form>
-        </div>
-        <div class="otherRecipe">
+            </div>
+        </section>
+        <section class="recipeImages">
             <h4>Other Recipe</h4>
             <div>
                 <!-- <div id="meatBall"><img src="./meat balls.png" alt="" width="180px" height="120px"></div> -->
@@ -86,66 +112,123 @@
                 <div id="cucumberBread"></div>
                 <div class="following Img3"></div>
             </div>
-        </div>
+            <div class="otherRecipe2">
+                <img src="./Healthy food reminder.png" alt="" width="400px" height="450px">
+            </div>
+            </div>
+        </section>
     </section>
-    <section class="inputOtherRecipe">
-        <div class="inputTextDivs">
-            <h4>For the sauce</h4>
-            <form action="" method="post">
-                <div><input type="radio" name="inpButton" id=""><span> </span><input type="text" name="LoremText" id=""
-                        placeholder=" Lorem ipsum dolor sit amet.reiciendis doloremque nesciunt reprehenderit "
-                        class="inpText"></div>
-                <div><input type="radio" name="inpButton" id=""><span> </span><input type="text" name="LoremText" id=""
-                        placeholder=" Lorem ipsum dolor sit amet." class="inpText"></div>
-                <div><input type="radio" name="inpButton" id=""><span> </span><input type="text" name="LoremText" id=""
-                        placeholder=" Lorem ipsum dolor sit amet.reiciendis doloremque nesciunt reprehenderit "
-                        class="inpText"></div>
-            </form>
-        </div>
-        <div class="otherRecipe2">
-            <img src="./Healthy food reminder.png" alt="" width="400px" height="450px">
-        </div>
-    </section>
+    <!-- in this section we to have a sub-title and three paragraphs; in front of each shall be radio buttons.
+      the first paragraph shall contain an image sandwhiched within it -->
     <section>
         <h2>Directions</h2>
-        <ul class="cookingCorner">
-            <li>
-                <h4> <input type="radio" name="inpButton" id=""> 1. Lorem ipsum dolor sit amet.</h4>
-                <p class="cookingCorner">vitae animi optio labore obcaecati quisquam harum molestias omnis illo fugiat
-                    placeat tempora minus qui soluta dolor,
-                    consequatur tempore nulla corporis? Ea, maxime est temporibus molestias sunt architecto nobis modi!
-                    Dolor
-                    quasi minima, ex praesentium dolores nihil!</p>
-                <div id="cookingLady"></div>
-                <p class="cookingCorner"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore natus
-                    fuga ratione eveniet vitae animi optio labore obcaecati quisquam harum molestias omnis illo fugiat
-                    placeat
-                    tempora minus qui soluta dolor,
-                    consequatur tempore nulla corporis? Ea, maxime est temporibus molestias sunt architecto nobis modi!
-                    Dolor
-                    quasi minima, ex praesentium dolores nihil! </p>
-                <hr>
-            </li>
-            <li>
-                <h4> <input type="radio" name="inpButton" id=""> 2. Lorem ipsum dolor sit amet.</h4>
-                <p class="cookingCorner">vitae animi optio labore obcaecati quisquam harum molestias omnis illo fugiat
-                    placeat tempora minus qui soluta dolor,
-                    consequatur tempore nulla corporis? Ea, maxime est temporibus molestias sunt architecto nobis modi!
-                    Dolor
-                    quasi minima, ex praesentium dolores nihil!
-            </li>
-            <hr>
-            <li>
-                <h4> <input type="radio" name="inpButton" id=""> 3. Lorem ipsum dolor sit amet.</h4>
-                <p class="cookingCorner">vitae animi optio labore obcaecati quisquam harum molestias omnis illo fugiat
-                    placeat tempora minus qui soluta dolor,
-                    consequatur tempore nulla corporis? Ea, maxime est temporibus molestias sunt architecto nobis modi!
-                    Dolor
-                    quasi minima, ex praesentium dolores nihil!
-            </li>
-            <hr>
-        </ul>
-        <div class="deliciousBox"></div>
+        <h3><input type="radio" name="directions" id=""> 1. Lorem, ipsum dolor sit amet</h3>
+        consectetur adipisicing elit. Officiis suscipit voluptate officia deserunt
+        molestias molestiae nam eum, libero consectetur, minus, tempora repellat nostrum odit sint architecto aut
+        nesciunt omnis eos error nisi quasi ullam inventore distinctio velit! Praesentium soluta quae blanditiis
+        explicabo optio porro, aliquam deserunt ex fugit, aspernatur enim!
+        <div id="cookinglady"></div>
+        consectetur adipisicing elit. Officiis suscipit voluptate officia deserunt
+        molestias molestiae nam eum, libero consectetur, minus, tempora repellat nostrum odit sint architecto aut
+        nesciunt omnis eos error nisi quasi ullam inventore distinctio velit! Praesentium soluta quae blanditiis
+        explicabo optio porro, aliquam deserunt ex fugit, aspernatur enim!
+        <h3><input type="radio" name="directions" id=""> 2. Lorem, ipsum dolor sit amet</h3>
+        consectetur adipisicing elit. Officiis suscipit voluptate officia deserunt
+        molestias molestiae nam eum, libero consectetur, minus, tempora repellat nostrum odit sint architecto aut
+        nesciunt omnis eos error nisi quasi ullam inventore distinctio velit! Praesentium soluta quae blanditiis
+        explicabo optio porro, aliquam deserunt ex fugit, aspernatur enim!
+        <h3><input type="radio" name="directions" id=""> 3. Lorem, ipsum dolor sit amet</h3>
+        consectetur adipisicing elit. Officiis suscipit voluptate officia deserunt
+        molestias molestiae nam eum, libero consectetur, minus, tempora repellat nostrum odit sint architecto aut
+        nesciunt omnis eos error nisi quasi ullam inventore distinctio velit! Praesentium soluta quae blanditiis
+        explicabo optio porro, aliquam deserunt ex fugit, aspernatur enim!
+    </section>
+    <!-- this next section the delicious box shallhave a background upon which shall be one div.
+         this div shall contain two divs- one for the texts and the other for the inputs- 
+         one is a text input will the other is a submit input button. 
+         the two buttons shall be overlapped using relative positioning  
+         but for phone screens they shall stack-->
+    <section>
+        <div class="deliciousBox">
+            <div>
+                <h2>Deliciousness to your inbox</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis illum in temporibus quos
+                    eius
+                    laudantium labore voluptates voluptatem culpa ullam.</p>
+            </div>
+            <div><input type="email" name="e-mail" id="e-mail" placeholder="Your email address">
+                <input type="submit" value="Subscribe">
+            </div>
+        </div>
+    </section>
+
+    <!-- let's call this section likeAbleRecipe. 
+     on the Backgruond images shall be the white or red hearts indicating likes -->
+    <section>
+        <div>
+            <h3>You may like these recipe too</h3>
+            <div>
+                <div>
+                    <div></div>
+                    <h4>Mixed Tropical Fruit Salad with Superfood Boosts</h4>
+                    <!-- create a div for the two small iconlike images for time and cutleries -->
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div>
+                    <div></div>
+                    <h4>Big and Juicy wagyu Beef Cheeseburger</h4>
+                    <!-- create a div for the two small iconlike images for time and cutleries -->
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div>
+                    <div></div>
+                    <h4>Healthy Japaneses Fried Rice with Asparagus</h4>
+                    <!-- create a div for the two small iconlike images for time and cutleries -->
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div>
+                    <div></div>
+                    <h4>Cauliflower Walnut vegetarian Taco Meat</h4>
+                    <!-- create a div for the two small iconlike images for time and cutleries -->
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- this footer section shall have two divs; in one shall be two divs, while the other has four divs
+     below them shall be two divs; the second of which has three divs for icons
+     However pls note that the fooetr shall not display in flex. 
+     Infact what we are doing is strictly for screens above 450px-->
+    <section>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <h4>Recipe</h4>
+            <h4>Blog</h4>
+            <h4>Contact</h4>
+            <h4>About us</h4>
+        </div>
+        <div>C 2020Flowbase Powered by Webflow</div>
+        <div class="theThree icons">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </section>
 </body>
 
