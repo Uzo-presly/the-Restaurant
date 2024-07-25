@@ -1,14 +1,15 @@
 * {
   box-sizing: border-box;
-  margin: 5px;
+
   text-decoration: none;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 body {
-  background-color: rgba(255, 166, 0, 0.2);
+  background-color: rgba(251, 255, 0, 0.158);
   padding: 5px 5px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,16 +17,16 @@ body {
   text-align: center;
 }
 
-div.gallery div {
+.gallery div {
   padding: 0px 5px;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
 }
 
-.deliciousBox {
+/* .deliciousBox {
   background-size: cover;
-}
+} */
 /* inline text for paragraph styling <p style="font-size:48px;" >Foodie Land</p> */
 .foodielandText {
   font-family: "Lobster", sans-serif;
@@ -39,7 +40,7 @@ and make it into a block element: */
   /* display: block; */
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  max-width: 100%;
 }
 .tastyRecipeSamples > div {
   background-size: contain;
@@ -48,26 +49,30 @@ and make it into a block element: */
   margin-right: auto;
   width: 100%;
 }
-.paginatingButtons:hover {
-  color: orange;
-}
+/* .paginatingButtons :hover {
+  background-color: orange;
+} */
 .paginatingButtons a {
   border-radius: 5px;
   border: 1px solid #ddd; /* Gray */
   color: black;
   display: inline-block;
   padding: 8px 16px;
+  margin: 0px 5px 20px 0px;
   text-decoration: none;
+  line-height: 1.2rem;
 }
 
 .paginatingButtons a.active {
   border-radius: 5px;
-  background-color: #4caf50;
+  background-color: #070707;
   color: white;
 }
 
 .paginatingButtons a:hover:not(.active) {
-  background-color: #ddd;
+  /* scale: 1; */
+  background-color: #6d5b5b;
+  color: white;
 }
 .paginatingButtons a:first-child {
   border-top-left-radius: 5px;
@@ -78,7 +83,7 @@ and make it into a block element: */
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.navDivs {
+nav {
   display: none;
 }
 ul {
@@ -99,10 +104,10 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f3eded;
+  background-color: #d46e6e;
   max-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.788);
-  z-index: 1;
+  z-index: 0.5;
 }
 .dropdown-content a {
   color: rgb(59, 35, 2);
@@ -118,9 +123,10 @@ li.dropdown {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-#deliciousBoxSection {
+#forDelicious{width: 100%;}
+#deliciousBoxSection {width: 100%;
   border: 0.5px dashed whitesmoke;
-  border-radius: 10%;
+  border-radius: 7.5%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -133,30 +139,42 @@ but do not flex the sections yet */
     display: block;
   }
 } */
+#topsocialLinks a {
+  margin: 0px 5px;
+}
+#menu a {
+  margin: 0px 0px;
+}
 
-#menu {
-  display: flex;
-}
-#topsocialLinks {
-  display: flex;
-}
 @media screen and (min-width: 450px) {
   body {
     background-color: white;
   }
-  #navDivs > .gallery > nav {
+  .forNav {
+    width: 100%;
     background-color: #f5f0f0;
-    display: flex;
-    justify-content: flex-start;
-    margin: 0px 15px;
-    align-items: center;
-    gap: 0px;
   }
+
   .HambugerList {
     display: none;
   }
-  .navDivs {
+  nav {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+  }
+  #menu {
+    display: flex;
+  }
+  #menu a {
+    margin: 0px 10px;
+  }
+  #topsocialLinks {
+    display: flex;
+    align-items: center;
+  }
+  #topsocialLinks a {
+    margin: 0px 10px;
   }
 
   .recipeSamples {
@@ -165,23 +183,49 @@ but do not flex the sections yet */
   .tastyRecipeSamples {
     display: flex;
   }
+  .clearfix {
+    height: 200px;
+  }
   #deliciousBoxSection {
+    border-radius: 7.5%;
     max-width: 600px;
     height: 240px;
   }
+  .footerFirstLine {
+    margin: 20px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerFirstLine a {
+    margin-right: 10px;
+  }
+  .footerSecondLine {
+    /* width: 70%; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerSecondLine a {
+    margin: 0px 10px;
+  }
+  .forFooter {
+    width: 100%;
+  }
+}
+
+footer {
+  width: 100%;
 }
 /* now when the minimum the screen can be is
 700px; this implies that the screen is bigger
 than 700px in width, then our section can flex */
 @media screen and (min-width: 950px) {
-  #navDivs > .gallery > nav {
-    background-color: white;
-    display: flex;
-    justify-content: flex-start;
-    margin: 0px 5px;
-    align-items: center;
-    gap: 250px;
+  .forNav {
+    width: 100%;
+    line-height: 35px;
+    background-color: #f5f0f0;
   }
+  /* nav {display: flex; justify-content: space-between;} */
   section {
     display: flex;
   }
@@ -194,8 +238,29 @@ than 700px in width, then our section can flex */
   }
 
   #deliciousBoxSection {
-    max-width: 800px;
-    height: 320px;
+    width: 1300px;
+    height: 450px;
+    background-size: cover;
+  }
+  #forDelicious{width: 100%;}
+  #foodielandTextBttm {
+    position: relative;
+    left: 100px;
+  }
+  .paginatingButtons a {
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Gray */
+    color: black;
+    display: inline-block;
+    padding: 8px 26px;
+    margin: 0px 5px 60px 0px;
+    text-decoration: none;
+    line-height: 2rem;
+  }
+  .paginatingButtons a:hover:not(.active) {
+    scale: 1.2;
+    background-color: #d8adad;
+    color: white;
   }
 }
 @media screen and (min-width: 1300px) {

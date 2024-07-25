@@ -52,39 +52,39 @@
                 </li>
             </ul>
         </div>
-        <!-- this section has the nav that shall display inlarge screens.
+        <!-- this section has the nav that shall display in large screens.
   It is a container of three divs-one for foodieland image;
       for refs to other pages and for social links
       they shall flex in large screens but hidden in -->
     </section>
-    <section class="navDivs">
-        <div class="collectionCover" id="navDivs">
-            <div class="gallery">
-                <nav>
-                    <div id="foodielandText"><img src="./Foodieland..png" alt="" width="80px" height="15px"></div>
-                    <div id="menu">
-                        <ul>
-                            <li>
-                                <div>
-                                    <a href="./index homepage.html">Home</a>
-                                    <a href="./recipe.html">Recipe</a>
-                                    <a href="./BlogArticle.html">Blog Articles</a>
-                                    <a href="./ContactUs.html">Contact us</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="topsocialLinks">
-                        <div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="./facebook logo.png" alt=""
-                                    width="25px" height="35px"></a><!-- facebook link --></div>
-                        <div><a href="https://x.com/"><img src="./twitter logo.png" alt=""
-                                    width="30px"></a><!-- twitter logo --></div>
-                        <div><a href="https://www.instagram.com/"><img src="./instagram logo.png" alt=""
-                                    width="28px"></a><!-- instagram logo --></div>
-                    </div>
-                </nav>
+    <section class="forNav">
+        <!-- <div class="collectionCover" id="navDivs">
+            <div class="gallery"> -->
+        <nav>
+            <div id="foodielandText"><img src="./Foodieland..png" alt="" width="80px" height="15px"></div>
+            <!-- <div > -->
+            <!-- <ul>
+                            <li> -->
+            <div id="menu">
+                <a href="./index homepage.html">Home</a>
+                <a href="./recipe.html">Recipe</a>
+                <a href="./BlogArticle.html">Blog Articles</a>
+                <a href="./ContactUs.html">Contact us</a>
             </div>
-        </div>
+            <!-- </li>
+                        </ul> -->
+            <!-- </div> -->
+            <div id="topsocialLinks">
+                <div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="./facebook logo.png" alt="" width="15px"
+                            height="20px"></a><!-- facebook link --></div>
+                <div><a href="https://x.com/"><img src="./twitter logo.png" alt=""
+                            width="20px"></a><!-- twitter logo --></div>
+                <div><a href="https://www.instagram.com/"><img src="./instagram logo.png" alt=""
+                            width="15px"></a><!-- instagram logo --></div>
+            </div>
+        </nav>
+        <!-- </div>
+        </div> -->
     </section>
     <!-- this section contains an h1 tag, p tag and a div that contains two inputs -->
     <section class="blogTitile">
@@ -210,14 +210,14 @@ This <div> element has a max-width of 500px, and margin set to auto.} -->
         <div class="collectionCover">
             <div class="gallery">
                 <div class="paginatingButtons">
-                    <a href="#">&laquo;</a>
-                    <a href="#">1</a>
-                    <a class="active" href="#">2</a>
+                   <!--  <a href="#">&lsaquo;</a> -->
+                    <a class="active" href="#">1</a>
+                    <a  href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">4</a>
                     <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">&raquo;</a>
+                    <a href="#">...</a>
+                    <a href="#">&rsaquo;</a>
                 </div>
             </div>
         </div>
@@ -225,14 +225,13 @@ This <div> element has a max-width of 500px, and margin set to auto.} -->
     <section>
         <div class="collectionCover" id="deliciousBoxSection"
             style="background-image: url(./subcription\ backdrop.png);">
-            <div class="gallery">
+            <div class="gallery" id="forDelicious">
                 <div class="deliciousBox">
                     <div>
                         <h2>Deliciousness to your inbox</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis illum in temporibus quos
-                            eius
-                            laudantium labore voluptates voluptatem culpa ullam.</p>
-                    </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis illum in temporibus quos<br>
+                            eius laudantium labore voluptates voluptatem culpa ullam.</p>
+                </div>
                     <div><input type="email" name="e-mail" id="e-mail" placeholder="Your email address">
                         <input type="submit" value="Subscribe">
                     </div>
@@ -240,30 +239,49 @@ This <div> element has a max-width of 500px, and margin set to auto.} -->
             </div>
         </div>
     </section>
+    <div class="clearfix"></div>  
     <!-- this footer section shall have two divs; in one shall be two divs, while the other has four divs
      below them shall be two divs; the second of which has three divs for icons
      However pls note that the fooetr shall not display in flex. 
      Infact what we are doing is strictly for screens above 450px-->
-    <section>
-        <div class="collectionCover">
-            <div class="gallery">
-                <div>
+    <section class="forFooter">
+        
+                <div id="foodielandTextBttm"><img src="./Foodieland..png" alt="" width="80px" height="15px"></div>
+                <footer>
+                    <div class="footerFirstLine">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div id="menu" style="font-weight: 700;">
+                            <a href="./index homepage.html">Home</a>
+                            <a href="./recipe.html">Recipe</a>
+                            <a href="./BlogArticle.html">Blog Articles</a>
+                            <a href="./ContactUs.html">Contact us</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- this section covers the three social links-Facebook,Twitter & Instagram -->
+                    <div class="footerSecondLine">
+                        <div id="flowbase">© 2020Flowbase Powered by <span style="color: red;">Webflow ♥</span> </div>
+
+                        <div id="topsocialLinks">
+                            <div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="./facebook logo.png" alt=""
+                                        width="10px" height="20px"></a><!-- facebook link --></div>
+                            <div><a href="https://x.com/"><img src="./twitter logo.png" alt=""
+                                        width="20px"></a><!-- twitter logo --></div>
+                            <div><a href="https://www.instagram.com/"><img src="./instagram logo.png" alt=""
+                                        width="20px" height="auto"></a><!-- instagram logo --></div>
+                        </div>
+                    </div>
+                    &#128525;
+                </footer>
+
+                <!-- <div class="theThree icons">
                     <div></div>
                     <div></div>
-                </div>
-                <div>
-                    <h4>Recipe</h4>
-                    <h4>Blog</h4>
-                    <h4>Contact</h4>
-                    <h4>About us</h4>
-                </div>
-                <div>© 2020Flowbase Powered by Webflow ♥</div>
-                <div class="theThree icons">
                     <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <p>&#128525;</p>
+                </div> -->
+                <!-- <p></p> -->
             </div>
         </div>
     </section>
