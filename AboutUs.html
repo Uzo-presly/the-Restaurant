@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
+    <!-- we are attempting to activate an adress that we take people to youe emial -->
+    <style>
+        address {
+            display: block;
+            font-style: italic;
+        }
+    </style>
     <link rel="stylesheet" href="./AboutUs.css">
     <link rel="icon" type="image/x-icon" href="/badge icon.png">
 </head>
@@ -17,130 +24,178 @@
     <!--  this section has a hamburger-list for the small phones
       use list-tag to create the hamburger-->
     <section class="HambugerList">
-        <ul>
-            <li class="dropdown">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AgLMAfLEAea94rMy20+OTv9cAd67Y5e8AdK0AeK8Ae7AAfrLe7POKutSaw9ry+Pukyd5aoMVPmsLm8vcAhLZkpMd9stA6kr3M4ey10uPY6fG+1+bD3Oltqcri8PbGg5XrAAABtElEQVR4nO3dSXKDQBBEUQbJbaAlgQYPQjb3v6WDRtZWG2Mik/9O0D9gVxVRWQYAAAAAwGrs9htHh/Y3sKuawlFZ91NgX+WmYpwKj3Hpl8ym7FKh7SfM8+I0Bg5h6XfMZ/pNX40L84pCeRTqo1Afhfoo1EehPgr1UaiPQn0U6qNQH4X6VlLYOxeGsfBsPJnJL2n2VPhO1+JbKnxvln7IbMItFbal60dsPu5z/P4SSkN1dXqsKmSfWz/Xbf98CwUAAAAAAAAAAAAAAODvtdcXQ4fbI/CrrpfefZlFuJynQN/VvTgt7mXfxdIvmU24psJ66XfMJx7HwMH2Jx2NhdZb0MG+cCWb7BRKo1Afhfoo1EehPgr1UaiPQn0U6qNQH4X6KNQX1jG38J89rWB+6D8D9p/jr2AXAwAAAAAAAAAAAAAA4D+53yixvzPjfyvI/96T/c0u38W9/H53zf92nvUWtP+eN4X6KNRHoT4K9VGoj0J9FOqjUB+F+ijUR6E+CvWlwsG4MMY0ezKezBSnVHj0na6V3TTktv2I9580y7qqKRyV9WNXYbffODq0z7dQAAAAAABw8QPT1JCAPa8cWQAAAABJRU5ErkJggg=="
-                    alt="" width="100vw" height="25vw">
-                <div class="dropdown-content">
-                    <a href="./index homepage.html">Home</a>
-                    <a href="./recipe.html">Recipe</a>
-                    <a href="./BlogArticle.html">Blog Articles</a>
-                    <a href=""></a>
-                </div>
-            </li>
-        </ul>
+        <!-- the div below here shall be classed as "collectionCover". It is the overall cover for
+         each collection-set. The body of this html page shall 
+         have different width according to screen size. the width of which shall be 
+         in small screen less than 450px(max-width:450px); for bigger-phone screens
+         (min-wdth:450px); and  broken for larger screens to be min-width of 821px
+        for the sake of ipad-Air which has a screen-wdth of 820px.
+        It is expected that the related divs and sections shall re-arrange 
+         side by side other members in a flex as the page is maximized
+         However please Uzo, ensure to have their box-sizing set to Border-box .
+         Let this happen for the other sets of containers 
+         that are expected to be responsive-->
+        <div class="collectionCover">
+            <!-- the UL-container images shall have a width that is 
+             100% the space provided by its parent-container-
+             which happens to be the Unordered List(UL)  -->
+            <ul>
+                <li class="dropdown">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AgLMAfLEAea94rMy20+OTv9cAd67Y5e8AdK0AeK8Ae7AAfrLe7POKutSaw9ry+Pukyd5aoMVPmsLm8vcAhLZkpMd9stA6kr3M4ey10uPY6fG+1+bD3Oltqcri8PbGg5XrAAABtElEQVR4nO3dSXKDQBBEUQbJbaAlgQYPQjb3v6WDRtZWG2Mik/9O0D9gVxVRWQYAAAAAwGrs9htHh/Y3sKuawlFZ91NgX+WmYpwKj3Hpl8ym7FKh7SfM8+I0Bg5h6XfMZ/pNX40L84pCeRTqo1Afhfoo1EehPgr1UaiPQn0U6qNQH4X6VlLYOxeGsfBsPJnJL2n2VPhO1+JbKnxvln7IbMItFbal60dsPu5z/P4SSkN1dXqsKmSfWz/Xbf98CwUAAAAAAAAAAAAAAODvtdcXQ4fbI/CrrpfefZlFuJynQN/VvTgt7mXfxdIvmU24psJ66XfMJx7HwMH2Jx2NhdZb0MG+cCWb7BRKo1Afhfoo1EehPgr1UaiPQn0U6qNQH4X6KNQX1jG38J89rWB+6D8D9p/jr2AXAwAAAAAAAAAAAAAA4D+53yixvzPjfyvI/96T/c0u38W9/H53zf92nvUWtP+eN4X6KNRHoT4K9VGoj0J9FOqjUB+F+ijUR6E+CvWlwsG4MMY0ezKezBSnVHj0na6V3TTktv2I9580y7qqKRyV9WNXYbffODq0z7dQAAAAAABw8QPT1JCAPa8cWQAAAABJRU5ErkJggg=="
+                        alt="" width="100vw" height="25vw">
+                    <div class="dropdown-content">
+                        <a href="./index homepage.html">Home</a>
+                        <a href="./recipe.html">Recipe</a>
+                        <a href="./BlogArticle.html">Blog Articles</a>
+                        <a href=""></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <!-- this section has the nav that shall display inlarge screens.
   It is a container of three divs-one for foodieland image;
       for refs to other pages and for social links
       they shall flex in large screens but hidden in -->
     </section>
     <section class="navDivs">
-        <nav>
-            <div id="foodielandText"><img src="./Foodieland..png" alt="" width="110px" height="20px"></div>
-            <div id="menu">
-                <div><a href="./recipe details.html">Recipes</a></div>
-                <div><a href="./blog page.html">Blog</a></div>
-                <div><a href="./contact page.html">Contacts</a></div>
+        <div class="collectionCover" id="navDivs">
+            <div class="gallery">
+                <nav>
+                    <div id="foodielandText"><img src="./Foodieland..png" alt="" width="80px" height="15px"></div>
+                    <div id="menu">
+                        <ul>
+                            <li>
+                                <div>
+                                    <a href="./index homepage.html">Home</a>
+                                    <a href="./recipe.html">Recipe</a>
+                                    <a href="./BlogArticle.html">Blog Articles</a>
+                                    <a href="./ContactUs.html">Contact us</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="topsocialLinks">
+                        <div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="./facebook logo.png" alt=""
+                                    width="25px" height="35px"></a><!-- facebook link --></div>
+                        <div><a href="https://x.com/"><img src="./twitter logo.png" alt=""
+                                    width="30px"></a><!-- twitter logo --></div>
+                        <div><a href="https://www.instagram.com/"><img src="./instagram logo.png" alt=""
+                                    width="28px"></a><!-- instagram logo --></div>
+                    </div>
+                </nav>
             </div>
-            <div id="topsocialLinks">
-                <div><a href=""></a><!-- facebook link --></div>
-                <div><a href=""></a><!-- twitter logo --></div>
-                <div><a href=""></a><!-- instagram logo --></div>
-            </div>
-        </nav>
+        </div>
     </section>
     <!-- this section contains an h1 tag, p tag and a div that contains two inputs -->
     <section class="blogTitile">
-        <h1>Blog and Article</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati repellat ut commodi, porro non corrupti
-            explicabo eaque.</p>
-        <div><input type="search" name="search" id="" placeholder="search article, news or recipe">
-            <input type="submit" value="Search">
+        <div class="collectionCover">
+            <div class="gallery">
+                <h1>Blog and Article</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati repellat ut commodi, porro non
+                    corrupti
+                    explicabo eaque.</p>
+                <div><input type="search" name="search" id="" placeholder="search article, news or recipe">
+                    <input type="submit" value="Search">
+                </div>
+            </div>
         </div>
     </section>
     <!-- this next section contains two sections each with a number of divs -->
     <section>
         <!-- this section has six divs -->
         <section>
-            <!-- for labels do thus  <label for="email">Enter your email:</label> -->
+            <!-- for labelling, pls see the following example  <label for="email">Enter your email:</label> -->
             <!-- each div has two divs- 
              the second has two divs in which the first has an h and p tag while the other has two images -->
-            <div class="recipeSamples">
-                <div style="background-image: url(./ramen\ soup.png); width: 290px; height: 200px;"></div>
-                <div>
-                    <h3>Crochet Projects for Noodles Lovers</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
-                        necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+            <div class="collectionCover">
+                <div class="gallery">
+                    <div class="recipeSamples">
+                        <div style="background-image: url(./ramen\ soup.png); width: 290px; height: 200px;"></div>
+                        <div>
+                            <h3>Crochet Projects for Noodles Lovers</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                                necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                        </div>
+                    </div>
+                    <div class="recipeSamples">
+                        <div style="background-image: url(./mixed\ Tropical.png); width: 290px; height: 200px;"></div>
+                        <div>
+                            <h3>10 Vegetarian Recipes To Eat This Month</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                                necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                        </div>
+                    </div>
+                    <div class="recipeSamples">
+                        <div style="background-image: url(./professinalMaleChef.png); width: 290px; height: 200px;">
+                        </div>
+                        <div>
+                            <h3>10 Vegetarian Recipes To Eat This Month</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                                necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                        </div>
+                    </div>
+                    <div class="recipeSamples">
+                        <div style="background-image: url(./vegetatedLasagna.png); width: 290px; height: 200px;"></div>
+                        <div>
+                            <h3>Plaintain and Pinto Stew With Aji Verde</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                                necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                        </div>
+                    </div>
+                    <div class="recipeSamples">
+                        <div style="background-image: url(./plantainStew.png); width: 290px; height: 200px;"></div>
+                        <div>
+                            <h3>Plaintain and Pinto Stew With Aji Verde</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                                necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                        </div>
+                    </div>
+                    <div class="recipeSamples">
+                        <div style="background-image: url(./WeReHiringNotice.png); width: 290px; height: 200px;"></div>
+                        <div>
+                            <h3>We're Hiring a Communications Assistant!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
+                                necessitatibus culpa libero voluptate fugit voluptates labore!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="recipeSamples">
-                <div style="background-image: url(./mixed\ Tropical.png); width: 290px; height: 200px;"></div>
-                <div>
-                    <h3>10 Vegetarian Recipes To Eat This Month</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
-                        necessitatibus culpa libero voluptate fugit voluptates labore!</p>
-                </div>
-            </div>
-            <div class="recipeSamples">
-                <div style="background-image: url(./professinalMaleChef.png); width: 290px; height: 200px;"></div>
-                <div>
-                    <h3>Full Guide to Becoming a Professional Chef</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
-                        necessitatibus culpa libero voluptate fugit voluptates labore!</p>
-                </div>
-                <div class="recipeSamples">
-                    <div style="background-image: url(./vegetatedLasagna.png); width: 290px; height: 200px;"></div>
-                    <div>
-                        <h3>Plaintain and Pinto Stew With Aji Verde</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
-                            necessitatibus culpa libero voluptate fugit voluptates labore!</p>
-                    </div>
-                </div>
-                <div class="recipeSamples">
-                    <div style="background-image: url(./plantainStew.png); width: 290px; height: 200px;"></div>
-                    <div>
-                        <h3>Plaintain and Pinto Stew With Aji Verde</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
-                            necessitatibus culpa libero voluptate fugit voluptates labore!</p>
-                    </div>
-                </div>
-                <div class="recipeSamples">
-                    <div style="background-image: url(./WeReHiringNotice.png); width: 290px; height: 200px;"></div>
-                    <div>
-                        <h3>We're Hiring a Communications Assistant!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
-                            necessitatibus culpa libero voluptate fugit voluptates labore!</p>
-                    </div>
-                </div>
         </section>
         <!-- this section has four divs -->
         <section>
-            <h2>Tasty Recipes</h2>
-            <!-- each div has two divs.The second divs within them contain
+            <div class="collectionCover">
+                <div class="gallery">
+                    <h2>Tasty Recipes</h2>
+                    <!-- each div has two divs.The second divs within them contain
              an h3 tag and a p tag -->
-            <div class="tastyRecipeSamples">
-                <div style="background-image: url(./meat\ balls.png); width: 290px; height: 200px;"></div>
-                <div>
-                    <h3>Chicken Meatballs with Cream cheese</h3>
-                    <p>By Andreas Paula</p>
+                    <div class="tastyRecipeSamples">
+                        <div style="background-image: url(./meat\ balls.png); width: 290px; height: 200px;"></div>
+                        <div>
+                            <h3>Chicken Meatballs with Cream cheese</h3>
+                            <p>By Andreas Paula</p>
+                        </div>
+                    </div>
+                    <div class="tastyRecipeSamples">
+                        <div style="background-image: url(./bacon\ pasta.png); width: 290px; height: 200px;"></div>
+                        <div>
+                            <h3>Traditional Bolognaise Ragu</h3>
+                            <p>By Andreas Paula</p>
+                        </div>
+                    </div>
+                    <div class="tastyRecipeSamples">
+                        <div style="background-image: url(./Chinese\ dumplings.png); width: 290px; height: 200px;">
+                        </div>
+                        <div>
+                            <h3>Pork and Chive Chinese Dumplings</h3>
+                            <p>By Andreas Paula</p>
+                        </div>
+                    </div>
+                    <div class="tastyRecipeSamples">
+                        <div id="healthyFoodImage"
+                            style="background-image: url(./Healthy\ food\ reminder.png); width: 300px; height: 450px; background-repeat: no-repeat;">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="tastyRecipeSamples">
-                <div style="background-image: url(./bacon\ pasta.png); width: 290px; height: 200px;"></div>
-                <div>
-                    <h3>Traditional Bolognaise Ragu</h3>
-                    <p>By Andreas Paula</p>
-                </div>
-            </div>
-            <div class="tastyRecipeSamples">
-                <div style="background-image: url(./Chinese\ dumplings.png); width: 290px; height: 200px;"></div>
-                <div>
-                    <h3>Pork and Chive Chinese Dumplings</h3>
-                    <p>By Andreas Paula</p>
-                </div>
-            </div>
-            <div class="tastyRecipeSamples">
-                <div id="healthyFoodImage" style="background-image: url(./Healthy\ food\ reminder.png); width: 400px; height: 450px; background-repeat: no-repeat;" ></div>
             </div>
         </section>
     </section>
@@ -152,24 +207,36 @@ Note: The problem with the <div> above occurs when the browser window is smaller
 Using max-width instead, in this situation, will improve the browser's handling of small windows. This is important when making a site usable on small devices:
 This <div> element has a max-width of 500px, and margin set to auto.} -->
     <section>
-        <h3 class="NumbButton">1</h3>
-        <h3 class="NumbButton">2</h3>
-        <h3 class="NumbButton">3</h3>
-        <h3 class="NumbButton">4</h3>
-        <h3 class="NumbButton">5</h3>
-        <h3 class="NumbButton">...</h3>
-        <h3 class="NumbButton">)</h3>
+        <div class="collectionCover">
+            <div class="gallery">
+                <div class="paginatingButtons">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
+        </div>
     </section>
     <section>
-        <div class="deliciousBox">
-            <div>
-                <h2>Deliciousness to your inbox</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis illum in temporibus quos
-                    eius
-                    laudantium labore voluptates voluptatem culpa ullam.</p>
-            </div>
-            <div><input type="email" name="e-mail" id="e-mail" placeholder="Your email address">
-                <input type="submit" value="Subscribe">
+        <div class="collectionCover" id="deliciousBoxSection"
+            style="background-image: url(./subcription\ backdrop.png);">
+            <div class="gallery">
+                <div class="deliciousBox">
+                    <div>
+                        <h2>Deliciousness to your inbox</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis illum in temporibus quos
+                            eius
+                            laudantium labore voluptates voluptatem culpa ullam.</p>
+                    </div>
+                    <div><input type="email" name="e-mail" id="e-mail" placeholder="Your email address">
+                        <input type="submit" value="Subscribe">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -178,23 +245,185 @@ This <div> element has a max-width of 500px, and margin set to auto.} -->
      However pls note that the fooetr shall not display in flex. 
      Infact what we are doing is strictly for screens above 450px-->
     <section>
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-        <div>
-            <h4>Recipe</h4>
-            <h4>Blog</h4>
-            <h4>Contact</h4>
-            <h4>About us</h4>
-        </div>
-        <div>C 2020Flowbase Powered by Webflow</div>
-        <div class="theThree icons">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="collectionCover">
+            <div class="gallery">
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <h4>Recipe</h4>
+                    <h4>Blog</h4>
+                    <h4>Contact</h4>
+                    <h4>About us</h4>
+                </div>
+                <div>© 2020Flowbase Powered by Webflow ♥</div>
+                <div class="theThree icons">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <p>&#128525;</p>
+            </div>
         </div>
     </section>
+
+
+    <!--
+    <style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Image Gallery</h2>
+
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+<html>
+<head>
+<style>
+div.ex1 {
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+div.ex2 {
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+<h2>CSS Max-width</h2>
+<div class="ex1">This div element has width: 500px;</div>
+<br>
+<div class="ex2">This div element has max-width: 500px;</div>
+
+<><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
+the two divs!</p>
 </body>
+</html>
+ to get the current date and time displayed on screen,
+ see what to do below when in the javascript -->
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+</body>
+<!-- the following put emojis that laugh love-in-eyes and a red heart
+ <meta charset="UTF-8">
+<body>
+
+<h1>Sized Emojis</h1>
+
+<p style="font-size:48px">
+&#128512; &#128516; &#128525; &#128151;</p>
+This one is for the automated address
+<address>
+            Written by <a href="uhostofdgarterin@gmail.com">Mr Uzo</a>.<br> 
+            Call us: +2348060278655<br>
+            RICT Port-Harcourt, River state<br>
+            Nigeria
+            </address> -->
 
 </html>
+
+
+
+
+
+
+
+<!--
