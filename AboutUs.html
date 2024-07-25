@@ -110,7 +110,9 @@
             <div class="collectionCover">
                 <div class="gallery">
                     <div class="recipeSamples">
-                        <div style="background-image: url(./ramen\ soup.png); width: 290px; height: 200px;"></div>
+                        <!-- let's play a little here by giving id to some images which
+                         we shall refer to, by making the paginating buttons hrefs of their id's -->
+                        <div style="background-image: url(./ramen\ soup.png); width: 290px; height: 200px;" id="no1"></div>
                         <div>
                             <h3>Crochet Projects for Noodles Lovers</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
@@ -126,7 +128,7 @@
                         </div>
                     </div>
                     <div class="recipeSamples">
-                        <div style="background-image: url(./professinalMaleChef.png); width: 290px; height: 200px;">
+                        <div style="background-image: url(./professinalMaleChef.png); width: 290px; height: 200px;" id="no2">
                         </div>
                         <div>
                             <h3>10 Vegetarian Recipes To Eat This Month</h3>
@@ -143,7 +145,7 @@
                         </div>
                     </div>
                     <div class="recipeSamples">
-                        <div style="background-image: url(./plantainStew.png); width: 290px; height: 200px;"></div>
+                        <div style="background-image: url(./plantainStew.png); width: 290px; height: 200px;" id="no3"></div>
                         <div>
                             <h3>Plaintain and Pinto Stew With Aji Verde</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum officia ut iste,
@@ -169,7 +171,7 @@
                     <!-- each div has two divs.The second divs within them contain
              an h3 tag and a p tag -->
                     <div class="tastyRecipeSamples">
-                        <div style="background-image: url(./meat\ balls.png); width: 290px; height: 200px;"></div>
+                        <div style="background-image: url(./meat\ balls.png); width: 290px; height: 200px;" id="no4"></div>
                         <div>
                             <h3>Chicken Meatballs with Cream cheese</h3>
                             <p>By Andreas Paula</p>
@@ -183,7 +185,7 @@
                         </div>
                     </div>
                     <div class="tastyRecipeSamples">
-                        <div style="background-image: url(./Chinese\ dumplings.png); width: 290px; height: 200px;">
+                        <div style="background-image: url(./Chinese\ dumplings.png); width: 290px; height: 200px;" id="no5">
                         </div>
                         <div>
                             <h3>Pork and Chive Chinese Dumplings</h3>
@@ -210,12 +212,13 @@ This <div> element has a max-width of 500px, and margin set to auto.} -->
         <div class="collectionCover">
             <div class="gallery">
                 <div class="paginatingButtons">
-                   <!--  <a href="#">&lsaquo;</a> -->
-                    <a class="active" href="#">1</a>
-                    <a  href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
+                    <!--  <a href="#">&lsaquo;</a> -->
+                      <!-- let's test the ability of href="#" with ID's -->
+                    <a class="active" href="#no1">1</a>
+                    <a href="#no2">2</a>
+                    <a href="#no3">3</a>
+                    <a href="#no4">4</a>
+                    <a href="#no5">5</a>
                     <a href="#">...</a>
                     <a href="#">&rsaquo;</a>
                 </div>
@@ -229,60 +232,63 @@ This <div> element has a max-width of 500px, and margin set to auto.} -->
                 <div class="deliciousBox">
                     <div>
                         <h2>Deliciousness to your inbox</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis illum in temporibus quos<br>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis illum in temporibus
+                            quos<br>
                             eius laudantium labore voluptates voluptatem culpa ullam.</p>
-                </div>
-                    <div><input type="email" name="e-mail" id="e-mail" placeholder="Your email address">
-                        <input type="submit" value="Subscribe">
+                    </div>
+                    <div id="forInputs">
+                        <div><input type="email" name="e-mail" id="e-mail" placeholder="Your email address...">
+                            <input type="submit" value="Subscribe">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="clearfix"></div>  
+    <div class="clearfix"></div>
     <!-- this footer section shall have two divs; in one shall be two divs, while the other has four divs
      below them shall be two divs; the second of which has three divs for icons
      However pls note that the fooetr shall not display in flex. 
      Infact what we are doing is strictly for screens above 450px-->
     <section class="forFooter">
-        
-                <div id="foodielandTextBttm"><img src="./Foodieland..png" alt="" width="80px" height="15px"></div>
-                <footer>
-                    <div class="footerFirstLine">
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        </div>
-                        <div id="menu" style="font-weight: 700;">
-                            <a href="./index homepage.html">Home</a>
-                            <a href="./recipe.html">Recipe</a>
-                            <a href="./BlogArticle.html">Blog Articles</a>
-                            <a href="./ContactUs.html">Contact us</a>
-                        </div>
-                    </div>
-                    <hr>
-                    <!-- this section covers the three social links-Facebook,Twitter & Instagram -->
-                    <div class="footerSecondLine">
-                        <div id="flowbase">© 2020Flowbase Powered by <span style="color: red;">Webflow ♥</span> </div>
 
-                        <div id="topsocialLinks">
-                            <div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="./facebook logo.png" alt=""
-                                        width="10px" height="20px"></a><!-- facebook link --></div>
-                            <div><a href="https://x.com/"><img src="./twitter logo.png" alt=""
-                                        width="20px"></a><!-- twitter logo --></div>
-                            <div><a href="https://www.instagram.com/"><img src="./instagram logo.png" alt=""
-                                        width="20px" height="auto"></a><!-- instagram logo --></div>
-                        </div>
-                    </div>
-                    &#128525;
-                </footer>
+        <div id="foodielandTextBttm"><img src="./Foodieland..png" alt="" width="80px" height="15px"></div>
+        <footer>
+            <div class="footerFirstLine">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div id="menu" style="font-weight: 700;">
+                    <a href="./index homepage.html">Home</a>
+                    <a href="./recipe.html">Recipe</a>
+                    <a href="./BlogArticle.html">Blog Articles</a>
+                    <a href="./ContactUs.html">Contact us</a>
+                </div>
+            </div>
+            <hr>
+            <!-- this section covers the three social links-Facebook,Twitter & Instagram -->
+            <div class="footerSecondLine">
+                <div id="flowbase">© 2020Flowbase Powered by <span style="color: red;">Webflow ♥</span> </div>
 
-                <!-- <div class="theThree icons">
+                <div id="topsocialLinks">
+                    <div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="./facebook logo.png" alt=""
+                                width="10px" height="20px"></a><!-- facebook link --></div>
+                    <div><a href="https://x.com/"><img src="./twitter logo.png" alt=""
+                                width="20px"></a><!-- twitter logo --></div>
+                    <div><a href="https://www.instagram.com/"><img src="./instagram logo.png" alt="" width="20px"
+                                height="auto"></a><!-- instagram logo --></div>
+                </div>
+            </div>
+            &#128525;
+        </footer>
+
+        <!-- <div class="theThree icons">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div> -->
-                <!-- <p></p> -->
-            </div>
+        <!-- <p></p> -->
+        </div>
         </div>
     </section>
 
