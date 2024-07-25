@@ -238,8 +238,8 @@ than 700px in width, then our section can flex */
   }
 
   #deliciousBoxSection {
-    width: 1300px;
-    height: 450px;
+    min-width: 900px;
+    height: auto;
     background-size: cover;
   }
   #forDelicious{width: 100%;}
