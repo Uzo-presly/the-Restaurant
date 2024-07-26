@@ -192,7 +192,7 @@ but do not flex the sections yet */
   #deliciousBoxSection {
     border-radius: 7.5%;
     max-width: 600px;
-    height: 240px;
+    height: 300px;
   }
   .footerFirstLine {
     margin: 20px;
@@ -242,7 +242,7 @@ than 700px in width, then our section can flex */
 
   #deliciousBoxSection {
     min-width: 900px;
-    height: auto;
+    height: 350px;
     background-size: cover;
   }
   #forDelicious {
@@ -297,7 +297,7 @@ than 700px in width, then our section can flex */
 @media screen and (min-width: 1300px) {
   #deliciousBoxSection {
     max-width: 1280px;
-    height: 440px;
+    height: 540px;
     margin-bottom: 10px;
   }
 }

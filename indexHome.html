@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./indexHome.css">
+</head>
+
+<body>
+    <!--  this section has a hamburger-list for the small phones
+      use list-tag to create the hamburger-->
+    <section class="HambugerList">
+        <!-- the div below here shall be classed as "collectionCover". It is the overall cover for
+         each collection-set. The body of this html page shall 
+         have different width according to screen size. the width of which shall be 
+         in small screen less than 450px(max-width:450px); for bigger-phone screens
+         (min-wdth:450px); and  broken for larger screens to be min-width of 821px
+        for the sake of ipad-Air which has a screen-wdth of 820px.
+        It is expected that the related divs and sections shall re-arrange 
+         side by side other members in a flex as the page is maximized
+         However please Uzo, ensure to have their box-sizing set to Border-box .
+         Let this happen for the other sets of containers 
+         that are expected to be responsive-->
+        <div class="collectionCover">
+            <!-- the UL-container images shall have a width that is 
+             100% the space provided by its parent-container-
+             which happens to be the Unordered List(UL)  -->
+            <ul>
+                <li class="dropdown">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AgLMAfLEAea94rMy20+OTv9cAd67Y5e8AdK0AeK8Ae7AAfrLe7POKutSaw9ry+Pukyd5aoMVPmsLm8vcAhLZkpMd9stA6kr3M4ey10uPY6fG+1+bD3Oltqcri8PbGg5XrAAABtElEQVR4nO3dSXKDQBBEUQbJbaAlgQYPQjb3v6WDRtZWG2Mik/9O0D9gVxVRWQYAAAAAwGrs9htHh/Y3sKuawlFZ91NgX+WmYpwKj3Hpl8ym7FKh7SfM8+I0Bg5h6XfMZ/pNX40L84pCeRTqo1Afhfoo1EehPgr1UaiPQn0U6qNQH4X6VlLYOxeGsfBsPJnJL2n2VPhO1+JbKnxvln7IbMItFbal60dsPu5z/P4SSkN1dXqsKmSfWz/Xbf98CwUAAAAAAAAAAAAAAODvtdcXQ4fbI/CrrpfefZlFuJynQN/VvTgt7mXfxdIvmU24psJ66XfMJx7HwMH2Jx2NhdZb0MG+cCWb7BRKo1Afhfoo1EehPgr1UaiPQn0U6qNQH4X6KNQX1jG38J89rWB+6D8D9p/jr2AXAwAAAAAAAAAAAAAA4D+53yixvzPjfyvI/96T/c0u38W9/H53zf92nvUWtP+eN4X6KNRHoT4K9VGoj0J9FOqjUB+F+ijUR6E+CvWlwsG4MMY0ezKezBSnVHj0na6V3TTktv2I9580y7qqKRyV9WNXYbffODq0z7dQAAAAAABw8QPT1JCAPa8cWQAAAABJRU5ErkJggg=="
+                        alt="" width="100vw" height="25vw">
+                    <div class="dropdown-content">
+                        <a href="./index homepage.html">Home</a>
+                        <a href="./recipe.html">Recipe</a>
+                        <a href="./BlogArticle.html">Blog Articles</a>
+                        <a href=""></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- this section has the nav that shall display in large screens.
+  It is a container of three divs-one for foodieland image;
+      for refs to other pages and for social links
+      they shall flex in large screens but hidden in -->
+    </section>
+    <section class="forNav">
+        <!-- <div class="collectionCover" id="navDivs">
+            <div class="gallery"> -->
+        <nav>
+            <div id="foodielandText"><img src="./Foodieland..png" alt="" width="80px" height="15px"></div>
+            <!-- <div > -->
+            <!-- <ul>
+                            <li> -->
+            <div id="menu">
+                <a href="./index homepage.html">Home</a>
+                <a href="./recipe.html">Recipe</a>
+                <a href="./BlogArticle.html">Blog Articles</a>
+                <a href="./ContactUs.html">Contact us</a>
+            </div>
+            <!-- </li>
+                        </ul> -->
+            <!-- </div> -->
+            <div id="topsocialLinks">
+                <div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="./facebook logo.png" alt="" width="15px"
+                            height="20px"></a><!-- facebook link --></div>
+                <div><a href="https://x.com/"><img src="./twitter logo.png" alt=""
+                            width="20px"></a><!-- twitter logo --></div>
+                <div><a href="https://www.instagram.com/"><img src="./instagram logo.png" alt=""
+                            width="15px"></a><!-- instagram logo --></div>
+            </div>
+        </nav>
+        <!-- </div>
+        </div> -->
+    </section>
+    <section class="landing">
+        <section>
+            <div class="scroller"></div>
+            <div class="backdrop i" style="background-color:#E7FAFE;">
+                <div><img src="./hot recipe button.png" alt="food menu picture" class="logo" width="150px">
+                    <h1>Spicy delicious <br>chicken wings</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis eius atque a
+                        distinctio,
+                        quisquam inventore quia vitae necessitatibus! Libero.</p><img src="./timer 30 minutes.png"
+                        alt="" class="logo" width="150px"><img src="./chicken table knive.png" alt="" class="logo"
+                        width="150px">
+                    <div id="johnRecipeView"><img src="./john smith passport.png" alt="" width="150px"
+                            id="jhnPspot"><img src="./view recipe button.png" alt="" width="150px"></div>
+                </div>
+            </div>
+            <div><img src="./Badge.png" alt="a badge saying handpicked recipes" width="150px" height="150px"
+                    id="lndnBarge">
+            </div>
+        </section>
+        <section>
+            <div class="backdrop ii" style="background-image: url(./Landing\ page\ dish.png);">
+            </div>
+            <div class="scroller"></div>
+        </section>
+    </section>
+    <h2 class="categorizedText">Categories</h2>
+    <section class="categorie">
+        <figure class=" page"><img src="./breakfast.png" alt="breakfast" width="180px" height="200px"></figure>
+        <figure class=" page"><img src="./vegan.png" alt="vegan" width="180px" height="200px"></figure>
+        <figure class=" page"><img src="./meat.png" alt="meat" width="180px" height="200px"></figure>
+        <figure class=" page"><img src="./desert.png" alt="desert" width="180px" height="200px"></figure>
+        <figure class=" page"><img src="./lunch.png" alt="lunch" width="180px" height="200px"></figure>
+        <figure class=" page"><img src="./chocolate.png" alt="chocolate" width="180px" height="200px"></figure>
+    </section>
+    <div>
+        <h2 class="simpleCntr">simple and tasty recipes</h2>
+        <p class="simpleCntr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nemo dolores tempora non
+            libero. Sint error
+            unde officiis minus quibusdam!</p>
+    </div>
+    </section>
+    <section id="gridColumn">
+        <div>
+            <div class="forRecipePics" style="background-image: url(./big\ beef.png); width: 350px; height: 250px">
+            </div>
+            <div>
+                <h2>Big and juicy wagyu Beef Cheeseburger</h2>
+            </div>
+        </div>
+        <div>
+            <div class="forRecipePics" style="background-image:url(./ginger\ sauce.png) ; width: 350px; height: 250px">
+            </div>
+            <div>
+                <h2>Fresh Lime Roasted Salmon with Ginger Sauce</h2>
+            </div>
+        </div>
+        <div>
+            <div class="forRecipePics" style="background-image: url(./strawberry.png); width: 350px; height: 250px">
+            </div>
+            <div>
+                <h2>Strawberry Oatmeal Pancake with Honey Syrup</h2>
+            </div>
+        </div>
+        <div>
+            <div class="forRecipePics"
+                style="background-image: url(./mayonaise\ salad.png); width: 350px; height: 250px"></div>
+            <div>
+                <h2>Fresh and Healthy Mixed Mayonnaise Salad</h2>
+            </div>
+        </div>
+        <div>
+            <div class="forRecipePics" style="background-image: url(./meat\ balls.png); width: 350px; height: 250px">
+            </div>
+            <div>
+                <h2>Chiken Meatballs with Cream Chineese</h2>
+            </div>
+        </div>
+        <div>
+            <div class="forRecipePics"
+                style="background-image: url(./Healthy\ food\ reminder.png); width: 350px; height: 250px" id="healthy">
+            </div>
+            <div style="height: 60px;"></div>
+        </div>
+        <div>
+            <div class="forRecipePics" style="background-image:url(./fruityPancake.png) ; width: 330px; height: 250px">
+            </div>
+            <div>
+                <h2>Fruity Pancake with Orange & Blueberry</h2>
+            </div>
+        </div>
+        <div>
+            <div class="forRecipePics"
+                style="background-image:url(./cucumber\ bread.png) ; width: 330px; height: 250px"></div>
+            <div>
+                <h2>The Best Easy One Pot Chicken and Rice</h2>
+            </div>
+        </div>
+        <div>
+            <div class="forRecipePics" style="background-image:url(./bacon\ pasta.png) ; width: 350px; height: 250px">
+            </div>
+            <div>
+                <h2>The Creamiest Creamy Chicken and Bacon Pasta</h2>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <section>
+            <div id="chefStatement" class="backdrop iii" style="background-color: white;">
+                <h2>Everyone can be a chef in their own kitchen</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit atque aliquam incidunt quas dolorum
+                    minus, totam temporibus? Non, recusandae placeat.</p>
+                <form action="get"><input type="search" name="Learn More" id="">Learn More</form>
+            </div>
+        </section>
+        <section>
+            <div class="backdrop iv"
+                style="background-image: url(./chef\ photo.png);alt:phot of a chef; height:600px; width:700px;">
+            </div>
+        </section>
+    </section>
+    <section id="checkoutSet">
+        <div>
+            <h2>Check out @foodieland on Instagram</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nemo dolores tempora non libero.
+                Sint error
+                unde officiis minus quibusdam!</p>
+        </div>
+        <div>
+            <figure><img src="./foodie land tokyo logo line.png" alt="" width="300px" height="40px"></figure>
+            <div><img src="./delicacy 1.png" alt="" width="300px" height="300px"></div>
+            <div class="likedByCraig"></div>
+        </div>
+        <div>
+            <figure><img src="./foodie land tokyo logo line.png" alt="" width="300px" height="40px"></figure>
+            <div><img src="./delicacy 2.png" alt="" width="300px" height="300px"></div>
+            <div class="likedByCraig"></div>
+        </div>
+        <div>
+            <figure><img src="./foodie land tokyo logo line.png" alt="" width="300px" height="40px"></figure>
+            <div><img src="./delicacy 3.png" alt="" width="300px" height="300px"></div>
+            <div class="likedByCraig"></div>
+        </div>
+        <div>
+            <figure><img src="./foodie land tokyo logo line.png" alt="" width="300px" height="40px"></figure>
+            <div><img src="./delicacy 4.png" alt="" width="300px" height="300px"></div>
+            <div class="likedByCraig"></div>
+        </div>
+    </section>
+    <section class="delicious">
+        <section>
+            <div class="deliciousRecipe">
+                <h2>Try this delicious recipe to make your day</h2>
+            </div>
+        </section>
+        <section>
+            <div class="deliciousRecipe">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora ut harum porro repellendus illo
+                    quam fugiat voluptates, eius provident!</p>
+            </div>
+        </section>
+        <section>
+            <div class="page">
+                <div><img src="./mixed Tropical.png" alt="" width="300px" height="200px"></div>
+                <div></div>
+                <div class="page">
+                    <div><img src="./rainbow chicken.png" alt="" width="300px" height="200px"></div>
+                    <div></div>
+                </div>
+        </section>
+        <section>
+            <div class="page">
+                <div><img src="./wagyu beef.png" alt="" width="300px" height="200px"></div>
+                <div></div>
+            </div>
+            <div class="page">
+                <div><img src="./barbeque sandwiches.png" alt="" width="300px" height="200px"></div>
+                <div></div>
+            </div>
+        </section>
+        <section>
+            <div class="page">
+                <div><img src="./japanese fried rice.png" alt="" width="300px" height="200px"></div>
+                <div></div>
+            </div>
+            <div class="page">
+                <div><img src="./firecracker lettuce.png" alt="" width="300px" height="200px"></div>
+                <div></div>
+            </div>
+        </section>
+        <section>
+            <div class="page">
+                <div><img src="./cauliflower meat.png" alt="" width="300px" height="200px"></div>
+                <div></div>
+            </div>
+            <div class="page">
+                <div><img src="./ramen soup.png" alt="" width="300px" height="200px"></div>
+                <div></div>
+            </div>
+        </section>
+    </section>
+    <section>
+        <div class="collectionCover" id="deliciousBoxSection"
+            style="background-image: url(./subcription\ backdrop.png);">
+            <div class="gallery" id="forDelicious">
+                <div class="deliciousBox">
+                    <div>
+                        <h2>Deliciousness to your inbox</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis illum in temporibus
+                            quos<br>
+                            eius laudantium labore voluptates voluptatem culpa ullam.</p>
+                    </div>
+                    <div id="forInputs">
+                        <div><input type="email" name="e-mail" id="e-mail" placeholder="Your email address...">
+                            <input type="submit" value="Subscribe">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+    <!-- this footer section shall have two divs; in one shall be two divs, while the other has four divs
+     below them shall be two divs; the second of which has three divs for icons
+     However pls note that the fooetr shall not display in flex. 
+     Infact what we are doing is strictly for screens above 450px-->
+    <section class="forFooter">
+
+        <div id="foodielandTextBttm"><img src="./Foodieland..png" alt="" width="80px" height="15px"></div>
+        <footer>
+            <div class="footerFirstLine">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div id="menu" style="font-weight: 700;">
+                    <a href="./index homepage.html">Home</a>
+                    <a href="./recipe.html">Recipe</a>
+                    <a href="./BlogArticle.html">Blog Articles</a>
+                    <a href="./ContactUs.html">Contact us</a>
+                </div>
+            </div>
+            <hr>
+            <!-- this section covers the three social links-Facebook,Twitter & Instagram -->
+            <div class="footerSecondLine">
+                <div id="flowbase">© 2020Flowbase Powered by <span style="color: red;">Webflow ♥</span> </div>
+
+                <div id="topsocialLinks">
+                    <div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="./facebook logo.png" alt=""
+                                width="10px" height="20px"></a><!-- facebook link --></div>
+                    <div><a href="https://x.com/"><img src="./twitter logo.png" alt=""
+                                width="20px"></a><!-- twitter logo --></div>
+                    <div><a href="https://www.instagram.com/"><img src="./instagram logo.png" alt="" width="20px"
+                                height="auto"></a><!-- instagram logo --></div>
+                </div>
+            </div>
+            &#128525;
+        </footer>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

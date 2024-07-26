@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  background-color: rgba(251, 255, 0, 0.158);
+  padding: 5px 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* .deliciousBox {
+  background-size: cover;
+} */
+/* inline text for paragraph styling <p style="font-size:48px;" >Foodie Land</p> */
+.foodielandText {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.scroller {
+  display: none;
+}
+.backdrop {
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 300px;
+  height: 300px;
+}
+nav {
+  display: none;
+}
+ul {
+  max-width: fit-content;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* inside the LI called dropdown is a hanburger-image displayed as block 
+  we are using it to represent our LI for users to see its postion on screen*/
+li.dropdown {
+  display: inline-block;
+}
+/* li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  } */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d46e6e;
+  max-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.788);
+  z-index: 0.5;
+}
+.dropdown-content a {
+  color: rgb(59, 35, 2);
+  padding: 5px 5px;
+  text-decoration: dashed;
+  display: block;
+  text-align: right;
+} /* when you hover the image representing the LI,
+   let dropdown-content display as block */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+#healthy {
+  background-size: cover;
+}
+.likedByCraig {
+  margin-top: 20px;
+  width: 100%;
+  height: 150px;
+  background-image: url(./likedByCraig.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#checkoutSet div {
+  margin: 0px 0px -10px 0px;
+  break-inside: avoid;
+}
+#checkoutSet {
+  column-count: 4;
+  column-width: 320px;
+  column-gap: 15px;
+}
+#checkoutSet > div > h2,
+p {
+  /* width: 100%; */
+  text-align: center;
+  column-span: all;
+}
+#gridColumn {
+  column-count: 3;
+  column-width: 400px;
+  column-gap: 1rem;
+}
+/* let's add the Break-Inside command
+for resizing to avoid slicing the divs 
+within the column  */
+#gridColumn > div {
+  break-inside: avoid;
+  background-size: contain;
+  margin-bottom: 10px;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+#gridColumn > div > div > h2 {
+  width: 100%; /* margin: auto; */
+}
+.forRecipePics {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#forDelicious {
+  width: 100%;
+}
+#deliciousBoxSection {
+  width: 100%;
+  border: 0.5px dashed whitesmoke;
+  border-radius: 7.5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* the next settings is for  
+when the screen-width is more than 450px,
+let the divs in the sections flex
+but do not flex the sections yet */
+/* @media screen and (max-width: 600px) {
+  .HambugerList {
+    display: block;
+  }
+} */
+#topsocialLinks a {
+  margin: 0px 5px;
+}
+#menu a {
+  margin: 0px 0px;
+}
+.categorie {
+  column-count: 6;
+  column-width: 200px;
+  break-inside: avoid;
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    background-color: white;
+  }
+  .scroller {
+    width: 30px;
+    height: 300px;
+  }
+
+  #topsocialLinks {
+    display: flex;
+    align-items: center;
+  }
+  #topsocialLinks a {
+    margin: 0px 10px;
+  }
+  .clearfix {
+    height: 200px;
+  }
+  #deliciousBoxSection {
+    border-radius: 7.5%;
+    max-width: 600px;
+    height: 300px;
+  }
+  .footerFirstLine {
+    margin: 20px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerFirstLine a {
+    margin-right: 10px;
+  }
+  .footerSecondLine {
+    /* width: 70%; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerSecondLine a {
+    margin: 0px 10px;
+  }
+  .forFooter {
+    width: 100%;
+  }
+}
+
+footer {
+  width: 100%;
+}
+
+/* now when the minimum the screen can be is
+700px; this implies that the screen is bigger
+than 700px in width, then our section can flex */
+@media screen and (min-width: 950px) {
+  /* section {
+    display: flex;
+  } */
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 1.3rem;
+  }
+  .backdrop {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 600px;
+  }
+  .scroller {
+    width: 40px;
+    height: 400px;
+  }
+
+  /* .recipe{display: none;}
+  .table1{display: grid;} */
+  #deliciousBoxSection {
+    min-width: 900px;
+    height: 350px;
+    background-size: cover;
+  }
+  #forDelicious {
+    width: 100%;
+  }
+  #foodielandTextBttm {
+    position: relative;
+    left: 100px;
+  }
+  #forInputs {
+    width: 100%;
+    height: 50px;
+    display: inline;
+  }
+  #forInputs > div > input:nth-last-child(2) {
+    width: 40%;
+    height: 50px;
+    border-color: #f1f1f1;
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 25px;
+  }
+  #forInputs > div > input:nth-last-child(1) {
+    width: 10%;
+    background-color: black;
+    color: white;
+    height: 40px;
+    margin-left: -100px;
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #deliciousBoxSection {
+    max-width: 1280px;
+    height: 540px;
+    margin-bottom: 10px;
+  }
+}
