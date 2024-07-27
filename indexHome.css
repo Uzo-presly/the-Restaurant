@@ -8,7 +8,7 @@
 
 body {
   background-color: rgba(251, 255, 0, 0.158);
-  padding: 5px 5px;
+  padding: 0px 10px;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -28,11 +28,15 @@ body {
 .scroller {
   display: none;
 }
+#chefStatement > h2,
+p {
+  display: block;
+}
 .backdrop {
   background-size: contain;
   background-repeat: no-repeat;
-  max-width: 300px;
-  height: 300px;
+  width: 420px;
+  height: 320px;
 }
 nav {
   display: none;
@@ -74,52 +78,89 @@ li.dropdown {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
+/* .topSectionContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+/* .topSection {
+  float: left;
+
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+/* .firstT {display: none;
+}
+
+.fourthT {
+  display: none;
+}
+.secondT {
+  width: 35%;
+}
+
+.thirdT {
+  width: 40%;
+} */
+   /* */ 
+
+.grd-container {width: 1000px;height: 50vh;
+  display: grid;
+  grid-template-columns: "auto, auto, auto, auto";
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grd-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.gd-container {width: 1000px;height: 50vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1px;
+  background-color: #2196F3;
+  padding: 1px;
+}
+
 
 #healthy {
   background-size: cover;
 }
+#chefSet {
+  display: flex;
+  flex-wrap: wrap;
+}
 .likedByCraig {
-  margin-top: 20px;
-  width: 100%;
-  height: 150px;
+  display: block;
+  margin-top: 0px;
+  max-width: 100%;
+  height: 100px;
   background-image: url(./likedByCraig.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
-#checkoutSet div {
+#checkoutSet > div figure {
   margin: 0px 0px -10px 0px;
+  padding: 0px 0px;
   break-inside: avoid;
 }
 #checkoutSet {
+  /* display: block;
+  margin: 0px auto;
+  max-width: 100%; */
   column-count: 4;
-  column-width: 320px;
-  column-gap: 15px;
+  column-width: 270px;
+  column-gap: 3px;
+  break-inside: avoid;
 }
-#checkoutSet > div > h2,
-p {
-  /* width: 100%; */
-  text-align: center;
-  column-span: all;
-}
-#gridColumn {
-  column-count: 3;
-  column-width: 400px;
-  column-gap: 1rem;
-}
+
 /* let's add the Break-Inside command
 for resizing to avoid slicing the divs 
 within the column  */
-#gridColumn > div {
-  break-inside: avoid;
-  background-size: contain;
-  margin-bottom: 10px;
-  text-align: center;
-  margin: auto;
-  width: 50%;
-}
-#gridColumn > div > div > h2 {
-  width: 100%; /* margin: auto; */
-}
+
 .forRecipePics {
   background-size: contain;
   background-repeat: no-repeat;
@@ -149,11 +190,9 @@ but do not flex the sections yet */
 #menu a {
   margin: 0px 0px;
 }
-.categorie {
-  column-count: 6;
-  column-width: 200px;
-  break-inside: avoid;
-}
+/* let figures in Categorie be given
+ a margin-Top of 0px for their tops 
+ to be on the same line */
 
 @media screen and (min-width: 450px) {
   body {
@@ -163,13 +202,108 @@ but do not flex the sections yet */
     width: 30px;
     height: 300px;
   }
-
-  #topsocialLinks {
-    display: flex;
-    align-items: center;
+  .HambugerList {
+    display: none;
   }
-  #topsocialLinks a {
-    margin: 0px 10px;
+  .forNav {
+    width: 100%;
+    background-color: #fff;
+  }
+  /* interestingly, just with column-width alone
+  with inline-block, my navv is flexing correctly.
+  There was no need for column-count. Wow!Halleluyah!!! */
+  nav {
+    display: inline-block;
+    margin: 0px auto;
+    max-width: 100%;
+    column-width: 100px;
+  }
+  /* the contents of Menu are set in columns */
+  #menu {
+    column-count: 4;
+    column-width: 55px;
+    column-gap: 2px;
+  }
+  #topsocialLinks {
+    display: none;
+  }
+  /* we need the containers classed as backdrop 
+  to be centralized,WHEN they stand in a column.
+  To achieve theis let the container display in block,
+  width:50%; margin-Left & margin-right set to Auto; */
+  .backdrop {
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 320px;
+    margin: 0px auto;
+  }
+   .topSectionContainer {height: 450px;
+
+  }
+  .topSectionContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .topSection {
+    float: left;
+
+    height: 500px;
+  }
+
+  .firstT {display: inline-block;
+    width: 5%; left: 1300px;
+  }
+  
+  .fourthT { display: inline-block;
+    width: 5%;position: absolute;left: 1300px;
+  }
+  .secondT {
+    width: 35%;
+  }
+  
+  .thirdT {
+    width: 45%;
+  }
+     
+  .categorie {
+    column-count: 6;
+    column-width: 180px;
+    break-inside: avoid;
+  }
+  /* so for the fifures of Categorie, do thus */
+  .categorie figure {
+    margin-top: 0px;
+  }
+  #gridColumn {
+    column-count: 3;
+    column-width: 400px;
+    column-gap: 1rem;
+  }
+  #gridColumn > div {
+    break-inside: avoid;
+    background-size: contain;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+  }
+  #gridColumn > div > div > h2 {
+    width: 100%; /* margin: auto; */
+  }
+  #checkoutSet > div h2,
+  p {
+    /* width: 100%; */
+    text-align: center;
+    column-span: all;
+  }
+
+  #checkoutSet {
+    column-count: 4;
+    column-width: 300px;
+    column-gap: 15px;
   }
   .clearfix {
     height: 200px;
@@ -204,14 +338,23 @@ but do not flex the sections yet */
 footer {
   width: 100%;
 }
-
+/* Assuming you have floated an image to eihter left or right
+you use the Clear and ::After selectore to select the class 
+and keep the image from flowing out of the container
+Let's assume the P tag and Image share the same class (.clearfix)
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
 /* now when the minimum the screen can be is
 700px; this implies that the screen is bigger
 than 700px in width, then our section can flex */
 @media screen and (min-width: 950px) {
-  /* section {
-    display: flex;
-  } */
+  .forNav {
+    width: 100%;
+    line-height: 35px;
+     }
   p,
   h1,
   h2,
@@ -222,7 +365,7 @@ than 700px in width, then our section can flex */
   .backdrop {
     background-size: contain;
     background-repeat: no-repeat;
-    width: 500px;
+    width: 450px;
     height: 600px;
   }
   .scroller {
@@ -230,8 +373,6 @@ than 700px in width, then our section can flex */
     height: 400px;
   }
 
-  /* .recipe{display: none;}
-  .table1{display: grid;} */
   #deliciousBoxSection {
     min-width: 900px;
     height: 350px;
@@ -272,11 +413,64 @@ than 700px in width, then our section can flex */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-}
 @media screen and (min-width: 1300px) {
   #deliciousBoxSection {
     max-width: 1280px;
     height: 540px;
     margin-bottom: 10px;
   }
+  /* nav {
+    display: block;
+    width: 100%;
+    columns: 3;
+    column-width: 100px;
+  }
+  #topsocialLinks {
+    display: block;
+    column-count: 3;
+    column-width: 30px;
+  } */
 }
+/* <style>
+ {
+  box-sizing: border-box;
+}
+
+Create two equal columns that floats next to each other 
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;  Should be removed. Only for demonstration 
+}
+
+ Clear floats after the columns 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Two Column Layout</h2>
+<p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div> */
