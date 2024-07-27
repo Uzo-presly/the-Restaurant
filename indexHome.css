@@ -229,7 +229,7 @@ but do not flex the sections yet */
   }
   /* we need the containers classed as backdrop 
   to be centralized,WHEN they stand in a column.
-  To achieve theis let the container display in block,
+  To achieve theirs, let the container display in block,
   width:50%; margin-Left & margin-right set to Auto; */
   .backdrop {
     display: block;
@@ -239,38 +239,10 @@ but do not flex the sections yet */
     height: 320px;
     margin: 0px auto;
   }
-   .topSectionContainer {height: 450px;
 
-  }
-  .topSectionContainer:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .topSection {
-    float: left;
-
-    height: 500px;
-  }
-
-  .firstT {display: inline-block;
-    width: 5%; left: 1300px;
-  }
-  
-  .fourthT { display: inline-block;
-    width: 5%;position: absolute;left: 1300px;
-  }
-  .secondT {
-    width: 35%;
-  }
-  
-  .thirdT {
-    width: 45%;
-  }
-     
   .categorie {
     column-count: 6;
-    column-width: 180px;
+    column-width: 150px;
     break-inside: avoid;
   }
   /* so for the fifures of Categorie, do thus */
