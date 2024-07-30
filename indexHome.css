@@ -4,7 +4,7 @@
   text-decoration: none;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap"); */
 
 body {
   background-color: rgba(251, 255, 0, 0.158);
@@ -14,13 +14,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 /* .deliciousBox {
   background-size: cover;
 } */
 /* inline text for paragraph styling <p style="font-size:48px;" >Foodie Land</p> */
 .foodielandText {
-  font-family: "Lobster", sans-serif;
+ font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -176,6 +177,7 @@ but do not flex the sections yet */
   .forNav {
     max-width: 100%;
     background-color: #fff;
+    overflow: hidden;
   }
   /* interestingly, just with column-width alone
   with inline-block, my navv is flexing correctly.
@@ -216,6 +218,9 @@ but do not flex the sections yet */
     display: table;
     clear: both;
   }
+  /* Uzo, pls take note of the settings of this grid
+   container we named (gd-container). Our grid-template-
+   columns has auto in four places for FOUR Columns */
   .gd-container {width: 1000px;height: 50vh;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -386,6 +391,8 @@ than 700px in width, then our section can flex */
     height: 540px;
     margin-bottom: 10px;
   }
+}
+}
   /* nav {
     display: block;
     width: 100%;
@@ -396,9 +403,9 @@ than 700px in width, then our section can flex */
     display: block;
     column-count: 3;
     column-width: 30px;
-  } */
-}
-/* <style>
+  } 
+
+ <style>
  {
   box-sizing: border-box;
 }
@@ -440,4 +447,4 @@ Create two equal columns that floats next to each other
     <h2>Column 2</h2>
     <p>Some text..</p>
   </div>
-</div> */
+</div>*/

@@ -1,0 +1,324 @@
+.backdrop,
+.forRecipePics,
+.likedByCraig {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#deliciousBoxSection,
+#healthy {
+  background-size: cover;
+}
+#deliciousBoxSection,
+.backdrop,
+.forRecipePics,
+.likedByCraig {
+  background-repeat: no-repeat;
+}
+#menu a,
+ul {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+body {
+  background-color: rgba(251, 255, 0, 0.158);
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.foodielandText {
+  font-family: Lobster, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.scroller,
+nav {
+  display: none;
+}
+#chefStatement > h2,
+.dropdown:hover .dropdown-content,
+p {
+  display: block;
+}
+.backdrop {
+  width: 420px;
+  height: 320px;
+}
+ul {
+  max-width: fit-content;
+  list-style-type: none;
+  padding: 0;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d46e6e;
+  max-width: 100px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.788);
+  z-index: 0.5;
+}
+.likedByCraig,
+footer {
+  max-width: 100%;
+}
+.dropdown-content a {
+  color: #3b2302;
+  padding: 5px;
+  text-decoration: dashed;
+  display: block;
+  text-align: right;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+#chefSet {
+  display: flex;
+  flex-wrap: wrap;
+}
+.likedByCraig {
+  display: block;
+  margin-top: 0;
+  height: 100px;
+  background-image: url(./likedByCraig.png);
+}
+#checkoutSet > div figure {
+  margin: 0 0 -10px;
+  padding: 0;
+  break-inside: avoid;
+}
+#checkoutSet {
+  column-count: 4;
+  column-width: 250px;
+  column-gap: 3px;
+  break-inside: avoid;
+}
+#forDelicious {
+  width: 100%;
+}
+#deliciousBoxSection {
+  width: 100%;
+  border: 0.5px dashed #f5f5f5;
+  border-radius: 7.5%;
+}
+#topsocialLinks a {
+  margin: 0 5px;
+}
+@media screen and (max-width: 450px) {
+  .gd-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #lndnBarge,
+  .LandingGrudVersion,
+  .gd-container div:first-child,
+  .gd-container div:nth-child(4) {
+    display: none;
+  }
+  .ite3 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 450px) {
+  .forNav,
+  body {
+    background-color: #fff;
+  }
+  .forNav,
+  nav {
+    max-width: 100%;
+  }
+  .backdrop,
+  nav {
+    margin: 0 auto;
+  }
+  #checkoutSet > div h2,
+  .deliciousRecipe > div h2,
+  p {
+    text-align: center;
+    column-span: all;
+  }
+  .scroller {
+    width: 30px;
+    height: 300px;
+  }
+  #gridColumn > div,
+  .backdrop {
+    background-size: contain;
+    width: 50%;
+  }
+  #topsocialLinks,
+  .HambugerList,
+  .LandingPlainVersion {
+    display: none;
+  }
+  nav {
+    display: inline-block;
+    column-width: 100px;
+  }
+  #menu {
+    column-count: 4;
+    column-width: 55px;
+    column-gap: 2px;
+  }
+  .backdrop {
+    display: block;
+    background-repeat: no-repeat;
+    height: 320px;
+  }
+  .topSectionContainer {
+    height: 450px;
+  }
+  .topSectionContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .gd-container {
+    width: 1000px;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1px;
+    background-color: #2196f3;
+    padding: 1px;
+  }
+  .categorie {
+    column-count: 6;
+    column-width: 150px;
+    break-inside: avoid;
+  }
+  .categorie figure {
+    margin-top: 0;
+  }
+  #gridColumn {
+    column-count: 3;
+    column-width: 400px;
+    column-gap: 1rem;
+  }
+  #checkoutSet,
+  .delicious {
+    column-count: 4;
+    column-gap: 15px;
+  }
+  #gridColumn > div {
+    break-inside: avoid;
+    text-align: center;
+    margin: auto;
+  }
+  #gridColumn > div > div > h2,
+  .forFooter {
+    width: 100%;
+  }
+  #checkoutSet {
+    column-width: 300px;
+  }
+  .clearfix {
+    height: 300px;
+  }
+  .delicious {
+    column-width: 250px;
+  }
+  .deliciousRecipe > div h2,
+  p {
+    width: 100%;
+  }
+  #deliciousBoxSection {
+    border-radius: 7.5%;
+    max-width: 600px;
+    height: 300px;
+  }
+  .footerFirstLine {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerFirstLine a {
+    margin-right: 10px;
+  }
+  .footerSecondLine {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerSecondLine a {
+    margin: 0 10px;
+  }
+}
+@media screen and (min-width: 950px) {
+  #forDelicious,
+  #forInputs {
+    width: 100%;
+  }
+  .forNav {
+    max-width: 100%;
+    line-height: 35px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    font-size: 1.3rem;
+  }
+  .backdrop {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 600px;
+  }
+  .scroller {
+    width: 40px;
+    height: 400px;
+  }
+  .ite2,
+  .ite3 {
+    max-width: 700px;
+  }
+  #deliciousBoxSection {
+    min-width: 900px;
+    height: 350px;
+    background-size: cover;
+  }
+  #foodielandTextBttm {
+    position: relative;
+    left: 100px;
+  }
+  #forInputs {
+    height: 50px;
+    display: inline;
+  }
+  #forInputs > div > input:nth-last-child(2) {
+    width: 40%;
+    height: 50px;
+    border-color: #f1f1f1;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 25px;
+  }
+  #forInputs > div > input:last-child {
+    width: 10%;
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    margin-left: -100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 1300px) {
+    #deliciousBoxSection {
+      max-width: 1280px;
+      height: 540px;
+      margin-bottom: 10px;
+    }
+  }
+}
