@@ -5,7 +5,7 @@
 }
 
 /* @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap"); */
-
+html {padding: 10px;}
 body {
   background-color: rgba(251, 255, 0, 0.158);
     max-width: 1440px;
@@ -145,9 +145,18 @@ but do not flex the sections yet */
 #topsocialLinks a {
   margin: 0px 5px;
 }
-#menu a {
-  margin: 0px 0px;
+#menu {width: 50%;
+  
 }
+#menu {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ;}
+.footerFirstLine{display: flex;
+justify-content: space-between;flex-wrap: wrap;
+}
+/* Uzo please let images that have nothing upon them 
+be made background images to divs
+the divs shall be set to the exact sizes as
+shown in the figma */
+#foodielandTextBttm{width: 110px;height: 30px; background-image: url(./Foodieland..png); background-size: contain;background-repeat: no-repeat;}
 @media screen and (max-width: 450px) {
   .gd-container{
   display: flex;
