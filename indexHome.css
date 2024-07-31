@@ -2,6 +2,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap"); */
@@ -145,11 +146,18 @@ but do not flex the sections yet */
 #topsocialLinks a {
   margin: 0px 5px;
 }
+.clearfix {
+  min-height: 150px;
+}
 #menu {width: 50%;
   
 }
 #menu {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ;}
 .footerFirstLine{display: flex;
+justify-content: space-between;flex-wrap: wrap;
+}
+.theThreeIcons {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+.footerSecondLine{display: flex;
 justify-content: space-between;flex-wrap: wrap;
 }
 /* Uzo please let images that have nothing upon them 
@@ -275,9 +283,9 @@ shown in the figma */
     column-width: 300px;
     column-gap: 15px;
   }
-  .clearfix {
+  /* .clearfix {
     height: 300px;
-  }
+  } */
   .delicious{column-count: 4;
     column-width: 250px;
     column-gap: 15px;}
