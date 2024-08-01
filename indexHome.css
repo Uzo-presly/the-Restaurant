@@ -1,4 +1,5 @@
 * {
+  
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;
@@ -12,7 +13,7 @@ html {
 }
 body {
   background-color: rgba(251, 255, 0, 0.158);
-  max-width: 1440px;
+  /* max-width: 1440px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,6 +164,37 @@ but do not flex the sections yet */
   justify-content: space-between;
   flex-wrap: wrap;
 }
+#menu {
+  width: 50%;
+}
+#menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footerFirstLine {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#naav {
+  width: 70%;
+}
+#naav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.naavLine {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#foodielandTextTop {
+  width: 110px;
+  height: 30px;
+  background-image: url(./Foodieland..png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .theThreeIcons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -184,12 +216,6 @@ shown in the figma */
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 450px) {
-  .gd-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
   .LandingGrudVersion {
     display: none;
   }
@@ -205,7 +231,15 @@ shown in the figma */
   .ite3 {
     width: 100%;
   }
+  .fornaav {
+    display: none;
+  }
+  .checkout {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
 /* let figures in Categorie be given
  a margin-Top of 0px for their tops 
  to be on the same line */
@@ -221,20 +255,20 @@ shown in the figma */
   .HambugerList {
     display: none;
   }
-  .forNav {
+  /* .forNav {
     max-width: 100%;
     background-color: #fff;
     overflow: hidden;
-  }
+  } */
   /* interestingly, just with column-width alone
   with inline-block, my navv is flexing correctly.
   There was no need for column-count. Wow!Halleluyah!!! */
-  nav {
+  /* nav {
     display: inline-block;
     margin: 0px auto;
     max-width: 100%;
     column-width: 100px;
-  }
+  } */
   /* the contents of Menu are set in columns */
   #menu {
     column-count: 4;
@@ -270,14 +304,9 @@ shown in the figma */
   /* Uzo, pls take note of the settings of this grid
    container we named (gd-container). Our grid-template-
    columns has auto in four places for FOUR Columns */
-  .gd-container {
-    width: 1000px;
-    height: 50vh;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 1px;
-    background-color: #2196f3;
-    padding: 1px;
+  .iteT,
+  .ite4 {
+    display: none;
   }
 
   .categorie {
@@ -305,17 +334,12 @@ shown in the figma */
   #gridColumn > div > div > h2 {
     width: 100%; /* margin: auto; */
   }
-  #checkoutSet > div h2,
-  p {
-    /* width: 100%; */
-    text-align: center;
-    column-span: all;
-  }
+ 
 
-  #checkoutSet {
-    column-count: 4;
-    column-width: 300px;
-    column-gap: 15px;
+  .checkOut {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    background-color: hsba(191, 9%, 99%, 1);
   }
   /* .clearfix {
     height: 300px;
@@ -355,6 +379,9 @@ shown in the figma */
     margin: 0px 10px;
   }
   .forFooter {
+    width: 100%;
+  }
+  .fornaav {
     width: 100%;
   }
 }
@@ -401,12 +428,20 @@ than 700px in width, then our section can flex */
     width: 40px;
     height: 400px;
   }
-  .ite3 {
+  .gd-container {
+    /* height: 50vh; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1px;
+    background-color: #2196f3;
+    margin-bottom: 100px;
+  }
+  /* .ite3 {
     max-width: 700px;
   }
   .ite2 {
     max-width: 700px;
-  }
+  } */
   #deliciousBoxSection {
     min-width: 900px;
     height: 350px;
@@ -447,6 +482,16 @@ than 700px in width, then our section can flex */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+  .iteT,
+  .ite4 {
+    display: inline-block;
+  }
+  .checkout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: hsba(191, 9%, 99%, 1);
+  }
+}
   @media screen and (min-width: 1300px) {
     .deliciousRecipeText {
       display: grid;
@@ -462,8 +507,14 @@ than 700px in width, then our section can flex */
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .checkout {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      background-color: hsba(191, 9%, 99%, 1);
+    }
   }
-}
+ 
+
 /* nav {
     display: block;
     width: 100%;
