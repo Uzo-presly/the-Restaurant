@@ -5,29 +5,29 @@
   font-family: "Inter", sans-serif;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap');
-
-html {padding: 10px;}
+html {
+  padding: 10px;
+}
 body {
   background-color: rgba(251, 255, 0, 0.158);
-    max-width: 1440px;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
 /* .deliciousBox {
   background-size: cover;
 } */
 /* inline text for paragraph styling <p style="font-size:48px;" >Foodie Land</p> */
 .foodielandText {
-     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 .scroller {
   display: none;
 }
@@ -151,33 +151,61 @@ but do not flex the sections yet */
 .clearfix {
   min-height: 150px;
 }
-#menu {width: 50%;
-  
+#menu {
+  width: 50%;
 }
-#menu {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ;}
-.footerFirstLine{display: flex;
-justify-content: space-between;flex-wrap: wrap;
+#menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.theThreeIcons {display: grid; grid-template-columns: 1fr 1fr 1fr;}
-.footerSecondLine{display: flex;
-justify-content: space-between;flex-wrap: wrap;
+.footerFirstLine {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.theThreeIcons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footerSecondLine {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 /* Uzo please let images that have nothing upon them 
 be made background images to divs
 the divs shall be set to the exact sizes as
 shown in the figma */
-#foodielandTextBttm{width: 110px;height: 30px; background-image: url(./Foodieland..png); background-size: contain;background-repeat: no-repeat;}
+#foodielandTextBttm {
+  width: 110px;
+  height: 30px;
+  background-image: url(./Foodieland..png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 @media screen and (max-width: 450px) {
-  .gd-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;}
-  .LandingGrudVersion{display: none;}
-  .gd-container div:nth-child(1){display: none;}
-  .gd-container div:nth-child(4){display: none;}
-  #lndnBarge{display: none;}
-  .ite3{width: 100%;}}
+  .gd-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .LandingGrudVersion {
+    display: none;
+  }
+  .gd-container div:nth-child(1) {
+    display: none;
+  }
+  .gd-container div:nth-child(4) {
+    display: none;
+  }
+  #lndnBarge {
+    display: none;
+  }
+  .ite3 {
+    width: 100%;
+  }
+}
 /* let figures in Categorie be given
  a margin-Top of 0px for their tops 
  to be on the same line */
@@ -228,9 +256,11 @@ shown in the figma */
     height: 320px;
     margin: 0px auto;
   }
-  .LandingPlainVersion{display: none;}
-   .topSectionContainer {height: 450px;
-
+  .LandingPlainVersion {
+    display: none;
+  }
+  .topSectionContainer {
+    height: 450px;
   }
   .topSectionContainer:after {
     content: "";
@@ -240,14 +270,16 @@ shown in the figma */
   /* Uzo, pls take note of the settings of this grid
    container we named (gd-container). Our grid-template-
    columns has auto in four places for FOUR Columns */
-  .gd-container {width: 1000px;height: 50vh;
+  .gd-container {
+    width: 1000px;
+    height: 50vh;
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 1px;
-    background-color: #2196F3;
+    background-color: #2196f3;
     padding: 1px;
   }
-  
+
   .categorie {
     column-count: 6;
     column-width: 150px;
@@ -288,10 +320,12 @@ shown in the figma */
   /* .clearfix {
     height: 300px;
   } */
-  .delicious{column-count: 4;
-    column-width: 250px;
-    column-gap: 15px;}
-    /* .deliciousRecipe > div h2,
+  #DeiiTry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+  /* .deliciousRecipe > div h2,
     p {
      width: 100%;
       text-align: center;
@@ -341,10 +375,15 @@ Let's assume the P tag and Image share the same class (.clearfix)
 700px; this implies that the screen is bigger
 than 700px in width, then our section can flex */
 @media screen and (min-width: 950px) {
+  #DeiiTry {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
   .forNav {
     max-width: 100%;
     line-height: 35px;
-     }
+  }
   p,
   h1,
   h2,
@@ -362,8 +401,12 @@ than 700px in width, then our section can flex */
     width: 40px;
     height: 400px;
   }
-.ite3{max-width: 700px;}
-.ite2{max-width: 700px;}
+  .ite3 {
+    max-width: 700px;
+  }
+  .ite2 {
+    max-width: 700px;
+  }
   #deliciousBoxSection {
     min-width: 900px;
     height: 350px;
@@ -404,15 +447,24 @@ than 700px in width, then our section can flex */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-@media screen and (min-width: 1300px) {
-  #deliciousBoxSection {
-    max-width: 1280px;
-    height: 540px;
-    margin-bottom: 10px;
+  @media screen and (min-width: 1300px) {
+    .deliciousRecipeText {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+    }
+    #deliciousBoxSection {
+      max-width: 1280px;
+      height: 540px;
+      margin-bottom: 10px;
+    }
+    #DeiiTry {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
 }
-}
-  /* nav {
+/* nav {
     display: block;
     width: 100%;
     columns: 3;
