@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./indexHome.css">
+    <link rel="stylesheet" href="./indexHome.css"> <link rel="stylesheet" href="./animation.css">
 </head>
 
 <body>
@@ -133,9 +133,9 @@
 
         <div class=" ite2" style="background-color:#E7FAFE;">
             <img src="./hot recipe button.png" alt="food menu picture" class="logo" style="width:150px;">
-            <h1>Spicy delicious <br>chicken wings</h1>
+            <!-- <h1>Spicy delicious <br>chicken wings</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis eius atque a
-                distinctio,quisquam inventore quia vitae necessitatibus! Libero.</p>
+                distinctio,quisquam inventore quia vitae necessitatibus! Libero.</p> -->
             <div><img src="./timer 30 minutes.png" alt="" class="logo" width="100px">
                 <img src="./chicken table knive.png" alt="" class="logo" width="100px">
             </div>
@@ -144,7 +144,7 @@
         </div>
 
         <div class=" ite3" id="ite3"
-            style="background-image: url(./Landing\ page\ dish.png); background-size: contain;  width: 660px; height: 640px;">
+            style=" background-size: contain; background-repeat: no-repeat; ">
         </div>
         </div>
         <!-- pls keep the contents absolute and their containers relative -->
@@ -153,13 +153,12 @@
 
     <section class="LandingGrudVersion" style="margin: 20px 0px;width: 100%; ">
         <div class="gd-container">
-            <div class=" iteT" id="leftBttn"><img src="./myLeftSideBttn.png" alt="" style="width:30px;height: 640px;margin: 0px 2px;">
+            <div class=" iteT" id="leftBttn" style="background-image: url(./myLeftSideBttn.png);width:30px;height: 640px;margin: 0px 2px; font-size: 18px;display: flex; flex-direction: column;justify-content: center;"> <strong>c <br>l <br>i <br> c <br>k <br>!</strong>
             </div>
-            <div class=" ite2" id="ite2" style="background-color:#E7FAFE; width: 100%;height: 640px; border-top-left-radius: 2cm;  border-bottom-left-radius: 2cm;">
+            <div class=" ite2" id="ite2" style="background-color:#E7FAFE; width: 100%;height: 640px; border-radius: 2cm;  border-bottom-left-radius: 2cm;font-size: 20px;">
                 <img src="./hot recipe button.png" alt="food menu picture" class="logo" style="width:200px; height: 120px; position: relative; left: -230px; top: 20px;">
-                <h1 style="font-size: 64px; display: flex;">Spicy delicious <br>chicken wings</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis eius atque a
-                    distinctio,quisquam inventore quia vitae necessitatibus! Libero.</p>
+                 <h1 style="font-size: 44px; display: flex;" id="theH1"> <br> </h1>
+                <p id="thePtag"></p> 
                 <div style=" display: flex; "><img src="./timer 30 minutes.png" alt="" class="logo" width="100px" style="width: 120px;height: 50px; margin: 30px 50px;">
                     <img src="./chicken table knive.png" alt="" class="logo" style="width: 120px;height: 50px;margin: 30px 50px;">
                 </div>
@@ -168,13 +167,13 @@
             </div>
 
             <div class=" ite3" id="ite3"
-                style="background-image: url(./Landing\ page\ dish.png); background-size: cover;  width: 760px; height: 640px; background-repeat: no-repeat; border-bottom-right-radius: 2cm;">
+                style=" background-size: cover; background-repeat: no-repeat; border-radius: 2cm;">
             </div>
             <div class=" ite4" id="rightBttn"> <img src="./myRightSideBttn.png" alt=""
                     style="width: 30px;height: 640px;margin: 0px 2px;"></div>
         </div>
         <img src="./Badge.png" alt="a badge saying handpicked recipes" width="150px" height="150px" id="lndnBarge"
-            style="position: absolute;left: 800px;top: 130px;">
+            style="position: absolute;left: 670px;top: 130px;">
 
 
         <!-- pls keep the contents absolute and their containers relative -->
@@ -338,7 +337,7 @@
                     style="width: 180px;height: 60px;"></div>
         </div>
         <div class="backdrop iv"
-            style="background-image: url(./chef\ photo.png);alt:phot of a chef;width: 710px;height: 597px;">
+            style="background-image: url(./chef\ photo.png);alt:phot of a chef;">
         </div>
     </section>
     <section style="display: flex;flex-direction: column;justify-content: center;">
@@ -503,7 +502,7 @@
                     <input type="email" name="e-mail" id="e-mail" placeholder="Your email address..."
                         style="min-width: 480px; min-height: 80px;border-radius: 12cm; padding-left: 1cm;margin: 0px auto;border: 1px solid white;">
                     <input type="submit" value="Subscribe" class="insideButtn"
-                        style="max-width: 160px;min-height: 60px;position: relative;left: 450px;bottom: 70px; border-radius: 12cm;background-color: black;color: white;">
+                        style="width: 160px;min-height: 60px;position: relative;left: 450px;bottom: 70px; border-radius: 12cm;background-color: black;color: white;">
                 </div>
             </div>
         </div>
@@ -567,7 +566,7 @@
         </div>
         </div>
     </section>
-   
+   <script src="./forHandPtagAnimation.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+@keyframes slide {
+    0% { background-image: url('./Landing\ page\ dish.png'); }
+    20% { background-image: url('./cauliflower\ meat.png'); }
+    40% { background-image: url('./japanese\ fried\ rice.png'); }
+    60% { background-image: url('./professinalMaleChef.png'); }
+    80% { background-image: url('./plantainStew.png'); }
+    100% { background-image: url('./cookingLady.png'); }
+  }
+  
+  /* Apply the animation to the div */
+  .ite3 {
+    animation: slide 30s infinite;
+    background-size: contain;
+    /* background-position: center; */
+  }
+/* @keyframes slide {
+    0% { h1:('Spicy delicious <br>chicken wings'); }
+    20% { h1:('Simple and Tasty <br> recipes'); }
+    40% { h1:('Big and juicy wagyu  <br> Beef Cheeseburger'); }
+    60% { h1:('Everyone can be a chef <br> in their own kitchen'); }
+    80% { h1:('Try this delicious recipe <br> to make your day'); }
+    100% { h1:('Deliciousness <br> to your inbox'); }
+  }
+  
+  /* Apply the animation to the div */
+  /* .ite2 {
+    animation: slide 20s infinite;
+    background-size: contain; */
+    /* background-position: center; */
+  /* } */ 

@@ -123,6 +123,9 @@ li.dropdown {
 /* let's add the Break-Inside command
 for resizing to avoid slicing the divs 
 within the column  */
+/* Set up the container */
+#leftBttn:hover{color: blue; }
+
 
 .forRecipePics {
   background-size: contain;
@@ -223,6 +226,24 @@ shown in the figma */
 }
 #lndnBarge{display: none;}
 .insideButtn{ position: relative;left: 300px;}
+.ite3{width: 800px; height: 640px;background-size: contain; }
+@media screen and (max-width: 320px) {
+  .ite1, .ite4 {display: none;}
+  .ite2{width: 320px;}
+  .ite3{width: 320px; height: 300px;background-size: contain;}
+  .LandingPlainVersion{width: 300px;}
+  /* body {width: 320px;} */
+  h2{font-size: 20px; width: 90%; margin: 0px 2px;}
+  h3{font-size: 15px; width: 90%; margin: 0px 2px;}
+  h1{font-size: 30px; width: 90%; margin: 0px 2px;}
+  p{font-size: 12px; width: 90%; margin: 0px 2px;}
+ .deliciousToBox{width: 300px; height: auto; background-size: contain; border-top-right-radius: 2cm; padding-top: 200px;}
+.enclosingSubscription{width: 300px;}
+.enclosingSubscription>h2{font-size: 20px;}
+#e-mail{min-width: 150px; min-height: 50px;}
+.insideButtn{ position: relative;left: 40px; bottom: 50px; width: 100px;}
+
+.iv{font-size: 20px; margin-top: 10px; width: 300px;}}
 @media screen and (max-width: 450px) {
   .LandingGrudVersion {
     display: none;
@@ -499,6 +520,7 @@ than 700px in width, then our section can flex */
   }
   /* for the submit button in Delicious box */
   .insideButtn{left: 350px;}
+  .iv{ width: 710px;height: 597px;}
 }
   @media screen and (min-width: 1300px) {
     .deliciousRecipeText {
